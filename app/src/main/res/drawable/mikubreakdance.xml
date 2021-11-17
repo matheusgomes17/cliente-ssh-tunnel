@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY">
+	
+	<FrameLayout
+		android:layout_width="130dp"
+		android:layout_height="130dp">
+
+		<ViewFlipper
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:scaleType="fitXY"
+			android:flipInterval="2000"
+			android:autoStart="true">
+
+			<ImageView
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:src="@drawable/jhaymiku1"
+				android:scaleType="fitXY"/>
+
+			<ImageView
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:src="@drawable/jhaymiku2"
+				android:scaleType="fitXY"/>
+
+			<ImageView
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:src="@drawable/jhaymiku3"
+				android:scaleType="fitXY"/>
+
+			<ImageView
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:src="@drawable/jhaymiku4"
+				android:scaleType="fitXY"/>
+
+			<ImageView
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:src="@drawable/jhaymiku5"
+				android:scaleType="fitXY"/>
+
+			<ImageView
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:src="@drawable/jhaymiku6"
+				android:scaleType="fitXY"/>
+		
+			
+		</ViewFlipper>
+
+		<TextView
+			android:layout_width="100dp"
+			android:layout_height="100dp"
+			android:text=""
+			android:gravity="center"
+			android:layout_gravity="center"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_marginStart="10.0dip"
+			android:layout_marginEnd="10.0dip"
+			android:textSize="0sp"
+			android:background="@drawable/borda2"/>
+
+		<Button
+			android:textStyle="bold"
+			android:textColor="#ffffffff"
+			android:id="@+id/activity_starterButtonMain"
+			android:popupBackground="@drawable/bg1"
+			android:layout_width="128.0dip"
+			android:layout_height="40.0dip"
+			android:gravity="center"
+			android:background="@drawable/bg1"
+			android:layout_marginTop="4dp"
+			android:layout_gravity="center"/>
+
+	</FrameLayout>
+	
+	
+	
+</RelativeLayout>

@@ -1,0 +1,769 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:orientation="vertical"
+	android:id="@+id/Layout1"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/menu">
+
+	<LinearLayout
+		android:id="@+id/activity_mainLinearLayout"
+		android:focusable="true"
+		android:focusableInTouchMode="true"
+		android:layout_marginStart="4.0dip"
+		android:layout_marginEnd="4.0dip"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="vertical"
+		android:background="@drawable/ripple_effect_two">
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="30dp"
+			android:text="𝐇-𝐨𝐧𝐞 𝐁𝐥𝐚𝐜𝐤 𝐁𝐫𝐚𝐯𝐨"
+			android:id="@+id/edson"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:gravity="center"
+			android:textStyle="bold"
+			android:textColor="#fffcfcfc"
+			android:layout_gravity="center"/>
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_marginStart="12.0dip"
+			android:layout_marginEnd="12.0dip"
+			android:background="@drawable/nv1">
+
+			<TextView
+				android:layout_width="110dp"
+				android:layout_height="110dp"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:background="@drawable/logox"
+				android:gravity="center"
+				android:layout_gravity="center"
+				android:textSize="0sp"
+				android:layout_margin="10dp"
+				android:layout_marginTop="4dp"/>
+
+			<TextView
+				android:layout_width="280dp"
+				android:layout_height="wrap_content"
+				android:text="𝐐𝐮𝐞𝐦 𝐦𝐞 𝐝𝐞𝐫𝐚 𝐞𝐮 𝐩𝐨𝐝𝐞𝐫 𝐯𝐨𝐚𝐫 𝐞𝐮 𝐣𝐮𝐫𝐨 𝐪𝐮𝐞 𝐥𝐞𝐯𝐚𝐯𝐚 𝐯𝐨𝐜̧𝐞 🖤"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:textSize="19sp"
+				android:layout_gravity="center"
+				android:background="@drawable/bg1"
+				android:gravity="center"/>
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:layout_marginStart="12.0dip"
+				android:layout_marginEnd="12.0dip"
+				android:background="@drawable/nv1">
+
+				<LinearLayout
+					android:layout_gravity="right"
+					android:orientation="horizontal"
+					android:layout_width="100.0dip"
+					android:background="@drawable/mini"
+					android:layout_height="20.0dip"
+					android:layout_marginTop="10.0dip"
+					android:layout_marginEnd="10dp">
+
+					<LinearLayout
+						android:orientation="horizontal"
+						android:layout_width="16.0dip"
+						android:layout_height="16.0dip"
+						android:background="@drawable/image_8"
+						android:layout_marginLeft="10dp"
+						android:gravity="center"
+						android:layout_gravity="center"/>
+
+					<TextView
+						android:textAppearance="?android:textAppearanceSmall"
+						android:textSize="12.0sp"
+						android:background="@drawable/mini1"
+						android:textColor="#fffcfcfc"
+						android:layout_width="fill_parent"
+						android:layout_height="fill_parent"
+						android:text="Servidor"
+						android:layout_marginStart="4.0dip"
+						android:gravity="center"/>
+
+				</LinearLayout>
+
+				<Spinner
+					style="@style/SpinnerTheme"
+					android:layout_width="fill_parent"
+					android:popupBackground="@drawable/bg"
+					android:background="@drawable/bg1"
+					android:layout_height="45.0dip"
+					android:textColor="#fffcfcfc"
+					android:spinnerMode="dropdown"
+					android:prompt="@string/category_prompt"
+					android:id="@+id/serverSpinner"/>
+
+				<Spinner
+					android:visibility="gone"
+					android:layout_marginTop="5dp"
+					android:layout_marginLeft="5dp"
+					android:layout_marginRight="5dp"
+					android:textColor="#fffcfcfc"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:prompt="@string/category_prompt"
+					android:id="@+id/proxyxx"/>
+
+				<LinearLayout
+					android:layout_gravity="right"
+					android:orientation="horizontal"
+					android:layout_width="100.0dip"
+					android:background="@drawable/mini"
+					android:layout_height="20.0dip"
+					android:layout_marginTop="5.0dip"
+					android:layout_marginEnd="10dp">
+
+					<LinearLayout
+						android:orientation="horizontal"
+						android:layout_width="16.0dip"
+						android:layout_height="16.0dip"
+						android:layout_marginLeft="10dp"
+						android:gravity="center"
+						android:layout_gravity="center"
+						android:background="@drawable/image_9"/>
+
+					<TextView
+						android:textAppearance="?android:textAppearanceSmall"
+						android:textSize="12.0sp"
+						android:background="@drawable/mini1"
+						android:textColor="#fffcfcfc"
+						android:layout_width="fill_parent"
+						android:layout_height="fill_parent"
+						android:text="payload"
+						android:layout_marginStart="4.0dip"
+						android:gravity="center"/>
+
+				</LinearLayout>
+
+				<Spinner
+					style="@style/SpinnerTheme"
+					android:layout_width="fill_parent"
+					android:popupBackground="@drawable/bg"
+					android:background="@drawable/bg1"
+					android:layout_height="45.0dip"
+					android:textColor="#fffcfcfc"
+					android:spinnerMode="dropdown"
+					android:id="@+id/payloadSpinner"/>
+
+				<RelativeLayout
+					android:layout_width="360dp"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:layout_marginTop="5dp">
+
+					<RelativeLayout
+						android:layout_width="180dp"
+						android:layout_height="45dp"
+						android:background="@drawable/bg1"
+						android:orientation="vertical"
+						android:layout_marginBottom="5dp">
+
+						<RelativeLayout
+							android:layout_width="match_parent"
+							android:layout_height="45dp"
+							android:background="@drawable/h_spin_shp1"
+							android:id="@+id/h_u_l"
+							android:layout_margin="5dp">
+
+							<android.support.design.widget.TextInputEditText
+								android:id="@+id/activity_mainInputPasswordUserEdit"
+								android:background="@null"
+								android:layout_width="fill_parent"
+								android:layout_height="match_parent"
+								android:hint="Usuario"
+								android:imeOptions="actionUnspecified|normal"
+								android:nextFocusDown="@+id/HarliePasss"
+								android:singleLine="true"
+								android:inputType="text"
+								android:textSize="14sp"
+								android:layout_centerInParent="true"
+								android:layout_alignParentRight="true"
+								android:layout_marginLeft="40dp"
+								android:textColorHint="#000000"
+								android:paddingLeft="5dp"/>
+
+							<ImageView
+								android:tint="@color/h_c"
+								android:layout_width="29dp"
+								android:layout_height="29dp"
+								android:src="@drawable/h_acnt"
+								android:layout_margin="10dp"/>
+
+						</RelativeLayout>
+
+						<TextView
+							android:visibility="gone"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:textStyle="italic"
+							android:text="Usuario"
+							android:layout_marginLeft="25dp"
+							android:background="@drawable/ic_gaming"
+							android:textColor="#000000"
+							android:textSize="10sp"
+							android:padding="2dp"
+							android:layout_marginTop="-4dp"/>
+
+					</RelativeLayout>
+
+					<RelativeLayout
+						android:layout_width="190dp"
+						android:background="@drawable/bg1"
+						android:layout_height="45dp"
+						android:layout_marginLeft="190dp">
+
+						<RelativeLayout
+							android:layout_width="match_parent"
+							android:layout_height="45dp"
+							android:background="@drawable/h_spin_shp1"
+							android:id="@+id/fragment_userpassTextInputLayout"
+							android:gravity="center"
+							android:layout_margin="5dp"
+							android:layout_marginTop="5dp">
+
+							<android.support.design.widget.TextInputEditText
+								android:id="@+id/activity_mainInputPasswordPassEdit"
+								android:background="@null"
+								android:layout_width="match_parent"
+								android:layout_height="match_parent"
+								android:hint="Senha"
+								android:singleLine="true"
+								android:textSize="14sp"
+								android:inputType="textPassword"
+								android:layout_centerInParent="true"
+								android:layout_alignParentLeft="true"
+								android:layout_marginLeft="40dp"
+								android:textColorHint="#000000"
+								android:paddingLeft="5dp"/>
+
+							<ImageView
+								android:tint="@color/h_c"
+								android:layout_width="29dp"
+								android:layout_height="29dp"
+								android:src="@drawable/h_pass"
+								android:layout_margin="10dp"/>
+
+							<ImageButton
+								android:padding="10dp"
+								android:background="@android:color/transparent"
+								android:layout_alignEnd="@id/activity_mainInputPasswordPassEdit"
+								android:id="@+id/show_password"
+								android:src="@drawable/ic_visibility_black_24dp"
+								android:layout_width="wrap_content"
+								android:layout_height="match_parent"
+								android:hint="@string/show_password"
+								android:layout_gravity="right"/>
+
+						</RelativeLayout>
+
+						<TextView
+							android:visibility="gone"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:textStyle="italic"
+							android:text="Senha"
+							android:layout_marginLeft="25dp"
+							android:background="@drawable/ic_gaming"
+							android:textColor="#000000"
+							android:textSize="10sp"
+							android:padding="2dp"
+							android:layout_marginTop="-4dp"/>
+
+					</RelativeLayout>
+
+				</RelativeLayout>
+
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="180dp"
+					android:background="@drawable/borda1"
+					android:layout_height="30.0dip"
+					android:gravity="center"
+					android:textColor="#fffcfcfc"
+					android:layout_gravity="center">
+
+					<LinearLayout
+						android:layout_gravity="center"
+						android:orientation="horizontal"
+						android:layout_width="170.0dip"
+						android:background="@drawable/borda2"
+						android:layout_height="30.0dip"
+						android:gravity="center">
+
+						<LinearLayout
+							android:orientation="horizontal"
+							android:layout_width="20.0dip"
+							android:layout_height="20.0dip"
+							android:background="@drawable/image_11"
+							android:gravity="center"
+							android:layout_gravity="center"
+							android:layout_marginLeft="10dp"/>
+
+						<TextView
+							android:id="@+id/textonline"
+							android:layout_height="wrap_content"
+							android:layout_width="100dp"
+							android:text=""
+							android:textStyle="bold"
+							android:textColor="#fffcfcfc"
+							android:layout_marginLeft="10dp"
+							android:gravity="center"
+							android:layout_gravity="center"/>
+
+					</LinearLayout>
+
+				</LinearLayout>
+
+				<include
+					android:spinnerMode="dropdown"
+					layout="@layout/barrastatus"
+					android:layout_marginTop="60dp"/>
+
+				<RelativeLayout
+					android:layout_width="match_parent"
+					android:layout_marginTop="5dp"
+					android:layout_height="wrap_content"
+					android:gravity="center"
+					android:layout_gravity="center">
+
+					<LinearLayout
+						android:layout_gravity="right"
+						android:orientation="horizontal"
+						android:layout_width="158.0dip"
+						android:background="@drawable/borda1"
+						android:layout_height="30.0dip"
+						android:layout_marginTop="5.0dip"
+						android:layout_marginEnd="10dp"
+						android:gravity="center">
+
+						<LinearLayout
+							android:orientation="horizontal"
+							android:layout_width="20.0dip"
+							android:layout_height="20.0dip"
+							android:background="@drawable/image_4"
+							android:layout_marginLeft="10dp"
+							android:gravity="center"
+							android:layout_gravity="center"
+							android:layout_marginEnd="10dp"/>
+
+						<TextView
+							android:textAppearance="?android:textAppearanceSmall"
+							android:id="@+id/TX"
+							android:textColor="#ffffff"
+							android:background="@drawable/borda2"
+							android:textSize="18.0sp"
+							android:layout_width="119.0dip"
+							android:layout_height="30dp"
+							android:text="0B"
+							android:gravity="center|center_vertical"/>
+
+					</LinearLayout>
+
+					<LinearLayout
+						android:layout_gravity="right"
+						android:orientation="horizontal"
+						android:layout_width="158.0dip"
+						android:background="@drawable/borda1"
+						android:layout_height="30.0dip"
+						android:layout_marginTop="5.0dip"
+						android:layout_marginEnd="10dp"
+						android:layout_marginStart="180dp">
+
+						<LinearLayout
+							android:orientation="horizontal"
+							android:layout_width="20.0dip"
+							android:layout_height="20.0dip"
+							android:background="@drawable/image_5"
+							android:layout_marginLeft="10dp"
+							android:gravity="center"
+							android:layout_gravity="center"
+							android:layout_marginEnd="10dp"/>
+
+						<TextView
+							android:textAppearance="?android:textAppearanceSmall"
+							android:id="@+id/RX"
+							android:textColor="#ffffff"
+							android:background="@drawable/borda2"
+							android:textSize="18.0sp"
+							android:layout_width="119.0dip"
+							android:layout_height="30dp"
+							android:text="0B"
+							android:gravity="center|center_vertical"/>
+
+					</LinearLayout>
+
+					<include
+						android:spinnerMode="dropdown"
+						android:layout_marginEnd="50dp"
+						layout="@layout/buttoniniciar"/>
+
+				</RelativeLayout>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+
+				<ImageView
+					android:layout_width="20dp"
+					android:layout_height="match_parent"
+					android:src="@drawable/ic_more"
+					android:layout_alignParentRight="true"
+					android:adjustViewBounds="true"
+					android:tint="?colorAccent"
+					android:layout_marginRight="5dp"/>
+
+			</RelativeLayout>
+
+			<TextView
+				android:id="@+id/activity_mainAutorText"
+				android:layout_height="0dp"
+				android:layout_width="wrap_content"
+				android:text="CRIE SEU LOGIN TESTE"
+				android:textStyle="bold"
+				android:textColor="#00BAFF"/>
+
+			<TextView
+				android:textAppearance="?android:textAppearanceSmall"
+				android:typeface="monospace"
+				android:textStyle="bold"
+				android:textColor="#000000"
+				android:gravity="center"
+				android:id="@+id/monsour_stats"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="3.0dip"
+				android:layout_marginTop="2.0dip"
+				android:text="Desconectado"/>
+
+			<LinearLayout
+				android:id="@+id/activity_mainInputPasswordLayout"
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:orientation="vertical"
+				android:gravity="center"
+				android:paddingLeft="20dp"
+				android:paddingRight="20dp"
+				android:paddingBottom="5dp"
+				android:layout_gravity="center">
+
+				<RelativeLayout
+					android:layout_width="match_parent"
+					android:layout_height="45dp"
+					android:background="@drawable/h_spin_shp1"
+					android:id="@+id/h_u_l"
+					android:layout_margin="5dp">
+
+					<android.support.design.widget.TextInputEditText
+						android:id="@+id/activity_mainInputPasswordUserEdit"
+						android:background="@null"
+						android:layout_width="fill_parent"
+						android:layout_height="match_parent"
+						android:hint="Usuario"
+						android:imeOptions="actionUnspecified|normal"
+						android:nextFocusDown="@+id/HarliePasss"
+						android:singleLine="true"
+						android:inputType="text"
+						android:textSize="14sp"
+						android:layout_centerInParent="true"
+						android:layout_alignParentRight="true"
+						android:layout_marginLeft="40dp"
+						android:textColorHint="#000000"
+						android:paddingLeft="5dp"/>
+
+				</RelativeLayout>
+
+				<RelativeLayout
+					android:layout_width="match_parent"
+					android:layout_height="45dp"
+					android:background="@drawable/h_spin_shp1"
+					android:id="@+id/fragment_userpassTextInputLayout"
+					android:gravity="center"
+					android:layout_margin="5dp"
+					android:layout_marginTop="5dp">
+
+					<android.support.design.widget.TextInputEditText
+						android:id="@+id/activity_mainInputPasswordPassEdit"
+						android:background="@null"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:hint="Senha"
+						android:singleLine="true"
+						android:textSize="14sp"
+						android:inputType="textPassword"
+						android:layout_centerInParent="true"
+						android:layout_alignParentLeft="true"
+						android:layout_marginLeft="40dp"
+						android:textColorHint="#000000"
+						android:paddingLeft="5dp"/>
+
+					<ImageButton
+						android:padding="10dp"
+						android:background="@android:color/transparent"
+						android:layout_alignEnd="@id/activity_mainInputPasswordPassEdit"
+						android:id="@+id/show_password"
+						android:src="@drawable/ic_visibility_black_24dp"
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:hint="@string/show_password"
+						android:layout_gravity="right"/>
+
+				</RelativeLayout>
+
+				<Spinner
+					style="@style/SpinnerTheme"
+					android:textColor="@color/gray"
+					android:layout_marginLeft="5dp"
+					android:layout_marginRight="5dp"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:prompt="@string/category_prompt"
+					android:id="@+id/serverSpinner"/>
+
+				<Spinner
+					android:visibility="gone"
+					android:layout_marginTop="5dp"
+					android:layout_marginLeft="5dp"
+					android:layout_marginRight="5dp"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:prompt="@string/category_prompt"
+					android:id="@+id/proxyxx"/>
+
+			</LinearLayout>
+
+			<Spinner
+				style="@style/SpinnerTheme"
+				android:layout_marginLeft="5dp"
+				android:layout_marginRight="5dp"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:prompt="@string/category_prompt"
+				android:id="@+id/payloadSpinner"/>
+
+		</LinearLayout>
+
+		<Button
+			android:id="@+id/activity_starterButtonMain"
+			android:layout_width="match_parent"
+			android:layout_height="36dp"
+			android:layout_marginTop="6dp"
+			android:layout_marginBottom="6dp"
+			android:layout_marginLeft="10dp"
+			android:layout_marginRight="10dp"
+			android:letterSpacing="0.1"
+			android:background="@drawable/button_blue"
+			android:textColor="#FFFFFF"
+			android:text="@string/start"
+			android:layout_gravity="center"/>
+
+		<LinearLayout
+			android:id="@+id/activity_mainInputPayloadLinearLayout"
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="vertical"
+			android:layout_marginTop="3dp"
+			android:padding="10dp">
+
+			<android.support.design.widget.TextInputLayout
+				android:visibility="gone"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+				<android.support.design.widget.TextInputEditText
+					android:id="@+id/activity_mainInputPayloadEditText"
+					android:inputType="textMultiLine|textLongMessage"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:ems="20"
+					android:visibility="gone"
+					android:textColor="@color/colorText"
+					android:hint="@string/payload"/>
+
+			</android.support.design.widget.TextInputLayout>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:visibility="gone"
+			android:id="@+id/activity_mainMetodoConexaoLayout"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:background="@drawable/vince9"
+			android:gravity="center"
+			android:padding="5dp"
+			android:layout_marginTop="3dp">
+
+			<TextView
+				android:id="@+id/activity_mainMetodoConexaoText"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:letterSpacing="0.1"
+				android:text="CONNECTION METHOD"
+				android:textStyle="normal"/>
+
+			<RadioGroup
+				android:id="@+id/activity_mainMetodoConexaoRadio"
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:orientation="horizontal"
+				android:breakStrategy="balanced"
+				android:gravity="center">
+
+				<android.support.v7.widget.AppCompatRadioButton
+					android:id="@+id/activity_mainSSHDirectRadioButton"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:hint="SSH DIRECT"
+					android:padding="5dp"/>
+
+				<android.support.v7.widget.AppCompatRadioButton
+					android:id="@+id/activity_mainSSHProxyRadioButton"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:hint="SSH + PROXY"/>
+
+				<android.support.v7.widget.AppCompatRadioButton
+					android:id="@+id/activity_mainSSL"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:hint="SSH + SSL"/>
+
+			</RadioGroup>
+
+			<android.support.v7.widget.SwitchCompat
+				android:id="@+id/activity_mainCustomPayloadSwitch"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:hint="Custom Payload"
+				android:layout_gravity="right"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/activity_mainInputProxyLayout"
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="horizontal"
+			android:padding="5dp"
+			android:layout_marginTop="3dp"
+			android:visibility="gone">
+
+			<TextView
+				android:id="@+id/activity_mainProxyText"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="@string/no_value"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="match_parent"
+			android:layout_width="fill_parent"
+			android:orientation="vertical"
+			android:visibility="gone"
+			android:layout_gravity="right">
+
+			<ImageView
+				android:layout_height="match_parent"
+				android:layout_width="30dp"
+				android:src="@drawable/ic_mode_edit_black_48dp"
+				android:layout_gravity="end"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/activity_mainInputSNILayout"
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="horizontal"
+			android:padding="5dp"
+			android:layout_marginTop="3dp"
+			android:visibility="gone"
+			android:gravity="center_horizontal"
+			android:onClick="showCustomSNI">
+
+			<TextView
+				android:id="@+id/activity_mainSNIText"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="@string/no_value"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="match_parent"
+			android:layout_width="fill_parent"
+			android:orientation="vertical"
+			android:visibility="gone"
+			android:layout_gravity="right">
+
+			<ImageView
+				android:layout_height="match_parent"
+				android:layout_width="30dp"
+				android:src="@drawable/ic_mode_edit_black_48dp"
+				android:layout_gravity="end"/>
+
+		</LinearLayout>
+
+		<com.google.android.gms.ads.AdView
+			xmlns:ads="http://schemas.android.com/apk/res-auto"
+			android:id="@+id/adBannerMainView"
+			android:layout_width="0dp"
+			android:layout_height="0dp"
+			android:layout_centerHorizontal="true"
+			android:layout_alignParentBottom="true"
+			android:layout_marginTop="3dp"
+			android:visibility="gone"
+			ads:adSize="BANNER"
+			ads:adUnitId="ca-app-pub-6560862030501171/3101206569"
+			android:layout_gravity="center">
+
+		</com.google.android.gms.ads.AdView>
+
+		<LinearLayout
+			android:id="@+id/activity_mainMensagemConfigLinearLayout"
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="vertical"
+			android:layout_margin="5dp"
+			android:background="@drawable/background_rounded"
+			android:padding="10dp">
+
+			<TextView
+				android:id="@+id/activity_mainMensagemConfigTextView"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:autoLink="web"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</RelativeLayout>
+

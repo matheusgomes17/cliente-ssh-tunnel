@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="match_parent"
+	android:background="@drawable/ripple_effect_two"
+	android:layout_width="match_parent">
+	
+	<com.jetradarmobile.snowfall.SnowfallView
+	xmlns:edsonsnow="http://schemas.android.com/apk/res-auto"
+	xmlns:norem="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	edsonsnow:snowflakesNum="250"
+	edsonsnow:snowflakeAlphaMin="150"
+	edsonsnow:snowflakeAlphaMax="255"
+	edsonsnow:snowflakeAngleMax="5"
+	norem:snowflakeSizeMin="8dp"
+	norem:snowflakeSizeMax="30dp"
+	norem:snowflakeSpeedMin="4"
+	norem:snowflakeSpeedMax="12"
+	norem:snowflakesFadingEnabled="true"
+	norem:snowflakesAlreadyFalling="false"
+	norem:snowflakeImage="@drawable/nv1"/>
+	
+	<LinearLayout
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:orientation="vertical">
+
+		<android.support.v7.widget.RecyclerView
+			android:id="@+id/recyclerLog"
+			android:gravity="start"
+			android:layout_width="fill_parent"
+			android:layout_height="match_parent" />
+
+	</LinearLayout>
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:layout_alignParentBottom="true"
+		android:gravity="right">
+
+		<android.support.design.widget.FloatingActionButton
+			android:layout_marginBottom="20dp"
+			android:layout_marginRight="20dp"
+			android:src="@drawable/ic_delete_forever_white_24dp"
+			android:layout_height="wrap_content"
+			android:backgroundTint="@color/colorPrimary"
+			android:layout_width="wrap_content"
+			android:id="@+id/delete_log"/>
+
+	</LinearLayout>
+</RelativeLayout>
+
+

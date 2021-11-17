@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+	<item>
+		<shape>
+			<gradient android:startColor="@color/harlie_color" android:endColor="@color/harlie_color" android:angle="90.0" android:centerColor="@color/harlie_color" />
+			<stroke android:width="1.0dip" android:color="@color/harlie_color" />
+			<corners android:radius="3.0dip" />
+			<padding android:left="0.0dip" android:top="0.0dip" android:right="0.0dip" android:bottom="0.0dip" />
+		</shape>
+	</item>
+</selector>

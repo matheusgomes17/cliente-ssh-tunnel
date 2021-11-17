@@ -1,0 +1,55 @@
+{
+    "Version": "1.0.0",
+    "ReleaseNotes": "",
+    "Servers": [
+        {
+            "Name": "QUERO-NET.com",
+            "FLAG": "br.png",
+            "ServerIP": "ssh.br1.c-nu.com",
+            "ServerPort": "80",
+            "SSLPort": "443",
+            "ProxyIP": "104.16.57.6",
+            "ProxyPort": "80",
+            "sInfo": "",
+            "ServerUser": "",
+            "ServerPass": ""
+        }
+    ],
+    "Network": [
+        {
+            "Name": "VIVO BR #1 - WS",
+            "Payload": "GET / HTTP/1.1[crlf]Host: ssh.br1.c-nu.com[crlf]Upgrade: websocket[crlf][crlf]",
+            "SNI": "ssh.br1.c-nu.com",
+            "Info": "websocket",
+            "isSSL": "false"
+        },
+        {
+            "Name": "CLARO BR #1 - WS",
+            "Payload": "GET / HTTP/1.1[crlf]Host: ssh.br1.c-nu.com[crlf]Upgrade: websocket[crlf][crlf]",
+            "SNI": "ssh.br1.c-nu.com",
+            "Info": "websocket",
+            "isSSL": "false"
+        },
+        {
+            "Name": "CLARO BR #1 - SSL",
+            "Payload": "GET / HTTP/1.1[crlf]Host: ssh.br1.c-nu.com[crlf]Upgrade: websocket[crlf][crlf]",
+            "SNI": "ssh.br1.c-nu.com",
+            "Info": "ssl",
+            "isSSL": "true"
+        },
+        {
+            "Name": "TIM BR #1 - WS",
+            "Payload": "GET / HTTP/1.1[crlf]Host: ssh.br1.c-nu.com[crlf]Upgrade: websocket[crlf][crlf]",
+            "SNI": "ssh.br1.c-nu.com",
+            "Info": "websocket",
+            "isSSL": "false"
+        },
+        {
+            "Name": "TIM BR #1 - SSL",
+            "Payload": "GET \/ HTTP\/1.1[crlf]Host: ssh.br1.c-nu.com[crlf]Upgrade: websocket[crlf][crlf]",
+            "SNI": "ssh.br1.c-nu.com",
+            "Info": "ssl",
+            "isSSL": "true"
+        }
+    ]
+}

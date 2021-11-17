@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">H-one Black Bravo</string>
+    <string name="app_description">SocksHttp is an SSH TUNNEL client, designed to circumvent local blocking and censorship on the network.</string>
+
+	<string name="attention">Attention</string>
+    <string name="cancel">Cancel</string>
+	<string name="ok">Ok</string>
+	<string name="exit">Exit</string>
+	<string name="error_request_permission">You need access to External Storage</string>
+
+	<string name="importing_settings">Importing Configuration</string>
+	<string name="log_settings_valid">File valid until: %1$s</string>
+	<string name="log_server_banner">Server Message:</string>
+	<string name="log_conection_lost">Connection Lost</string>
+
+
+	<string name = "start"> Iniciar </string>
+	<string name = "stop"> Pare </string>
+	<string name = "reconnect"> Reconectar </string>
+
+	<string name="stopping_service_ssh">Parando o serviço SSH</string>
+	<string name="starting_service_ssh">Iniciando serviço SSH</string>
+
+	<string name = "title_auth"> Autenticação </string>
+	<string name = "auth_message"> Preencher com os detalhes da conta SSH </string>
+	<string name = "auth_username"> Nome de usuário </string>
+	<string name = "password"> Senha </string>
+	<string name = "show_password"> Mostrar senha </string>
+	<string name = "save_password"> Salvar senha </string>
+
+
+	<string name = "channel_name_background"> ​​Estatísticas de conexão </string>
+	<string name = "channel_description_background"> ​​Estatísticas contínuas da conexão SocksHttp estabelecida </string>
+	<string name = "channel_name_status"> Alteração do status da conexão </string>
+	<string name = "channel_description_status"> Alterações de status da conexão SocksHttp (Conectando, autenticando,…) </string>
+	<string name = "channel_name_userreq"> Interação do usuário necessária </string>
+	<string name = "channel_description_userreq"> A conexão SocksHttp requer uma entrada do usuário, por exemplo,  autenticação de dois fatores </string>
+
+	<string name = "state_starting"> Primeiros passos </string>
+	<string name = "state_connecting"> Conectando </string>
+	<string name = "state_wait"> Aguardando resposta do servidor </string>
+	<string name = "state_auth"> Autenticando </string>
+	<string name = "state_auth_success"> Autenticado </string>
+	<string name = "state_get_config"> Obtendo a configuração do cliente </string>
+	<string name = "state_assign_ip"> Atribuição de endereços IP </string>
+	<string name = "state_add_routes"> Adicionando rotas </string>
+	<string name = "state_connected"> Conectado </string>
+	<string name = "state_disconnected"> Desconectado </string>
+	<string name = "state_reconnecting"> Reconectando </string>
+	<string name = "state_stopping"> Parando </string>
+	<string name = "state_noprocess"> Não está em execução </string>
+	<string name = "state_resolve"> Resolvendo nomes de host </string>
+	<string name = "state_tcp_connect"> Conectando (TCP) </string>
+	<string name = "state_auth_failed"> Falha na autenticação </string>
+	<string name = "state_nonetwork"> Aguardando rede </string>
+	<string name = "state_waitconnectretry"> Aguardando% ss segundos entre a tentativa de conexão </string>
+	<string name = "state_auth_pending"> Aguardando Autenticação </string>
+	<string name = "state_user_vpn_password" translatable = "false"> Aguardando a senha do usuário VPN </string>
+	<string name = "state_user_vpn_permission" translatable = "false"> Aguardando permissão do usuário para usar VPN API </string>
+	<string name = "state_user_vpn_password_cancelled" translatable = "false"> caixa de diálogo de entrada de senha VPN cancelada </string>
+	<string name = "state_user_vpn_permission_cancelled" translatable = "false"> Caixa de diálogo de permissão VPN API cancelada </string>
+	<string name = "unknown_state"> Status desconhecido </string>
+	<string name="nought_alwayson_warning"><![CDATA[If you did not get a VPN confirmation dialog, you have \"Always on VPN\" enabled for another app. In that case only that app is allowed to connect to a VPN. Check under Settings-> Networks more .. -> VPNS]]></string>
+	<string name = "no_vpn_support_image"> Sua imagem não é compatível com a API VPNService, desculpe :( </string>
+	<string name = "state_proxy_running"> Proxy em execução </string>
+	<string name = "state_proxy_inject"> Injeção </string>
+
+	<string name="mobile_info">Rolling no %3$s %1$s (%2$s), Android %5$s API %4$d</string>
+	<string name="app_mobile_info">Application Version: %1$s %2$s</string>
+
+	<string name="alert_update_app">Install the latest version</string>
+	<string name="error_settings_expired">Expired File</string>
+	<string name="error_file_settings_invalid">Invalid Configuration</string>
+	<string name="error_file_invalid">Invalid File</string>
+	<string name="error_internet_off">Please connect to the internet</string>
+	<string name="error_empty_payload">The payload cannot be empty</string>
+	<string name="error_empty_settings">Configure correctly to start</string>
+	<string name="error_proxy_invalid">Invalid Proxy</string>
+	<string name="error_server_ip_invalid">Invalid Server / IP</string>
+	<string name="error_root_detected">Locked configuration for devices with root access</string>
+	<string name="error_vpn_sniffer_detected">Another running VPN application has been detected, stop it before</string>
+	<string name="error_save_settings">Couldnt Save Configuration</string>
+
+</resources>
+

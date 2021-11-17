@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<item android:title="Definições">
+
+		<menu>
+
+			<group android:id="@+id/grupo1">
+
+
+				<item
+					android:id="@+id/miPhoneConfg"
+					android:icon="@drawable/ic_wifi_tethering_black_24dp"
+					android:title="@string/network_mobile"/>
+
+				<item android:id="@+id/miSettings"
+					android:icon="@drawable/ic_settings"
+					android:title="@string/settings"/>
+
+			</group>
+
+		</menu>
+
+	</item>
+
+	<item android:title="Comunicar">
+
+		<menu>
+
+			<group android:id="@+id/grupo2">
+
+				<item android:id="@+id/ssh"
+					android:icon="@drawable/ic_baseline_vpn_lock_24"
+					android:title="Nosso canal"/>
+
+				<item android:id="@+id/miSendFeedback"
+					android:icon="@drawable/ic_bug_report_black_24dp"
+					android:title="Feedback"/>
+
+				<item android:id="@+id/contact"
+					android:icon="@drawable/ic_rate_review_black_24dp"
+					android:title="Meu Pv"/>
+
+
+
+			</group>
+
+		</menu>
+	</item>
+
+</menu>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/drawerLayoutMain"
+	tools:visibility="invisible"
+	android:layout_height="match_parent"
+	android:background="@drawable/barrav"
+	android:layout_width="match_parent"
+	android:fitsSystemWindows="true"
+	tools:openDrawer="start"
+>
+
+	<LinearLayout
+
+		android:id="@+id/activity_mainLogsDrawerLinear"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:gravity="center_horizontal|center_vertical"
+		android:orientation="vertical">
+
+		<include
+			android:background="@drawable/button_blue"
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			layout="@layout/toolbar_main"/>
+		<!-- <android.support.v7.widget.Toolbar
+			android:id="@+id/toolbar_main"
+			android:theme="@style/ToolbarTheme"
+			android:background="?attr/colorPrimary"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:minHeight="?attr/actionBarSize"
+			app:tabIndicatorColor="#ffffff"
+			app:titleTextAppearance="@style/Toolbar.TitleText"
+			app:popupTheme="@style/AppTheme.PopupOverlay" /> -->
+
+		<android.support.design.widget.TabLayout
+			android:layout_height="0dp"
+			android:layout_width="match_parent"
+			android:theme="@style/ToolbarTheme"
+			android:background="@color/blue_light"
+			android:minHeight="?attr/actionBarSize"
+			app:tabGravity="fill"
+			android:letterSpacing="0.1"
+			app:tabTextColor="@color/gray"
+			app:tabSelectedTextColor="@color/black_light"
+			android:id="@+id/tablayout"/>
+
+		<android.support.v4.view.ViewPager
+			android:layout_height="match_parent"
+			android:layout_width="match_parent"
+			android:id="@+id/viewpager">
+
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:orientation="vertical"
+				android:gravity="center"
+				android:id="@+id/tab1">
+
+				<include
+					layout="@layout/activity_main"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/tab2"
+				android:layout_width="320dp"
+				android:layout_height="match_parent"
+				android:orientation="vertical"
+				android:layout_gravity="end"
+				android:padding="6dp"
+				android:background="@color/colorPrimaryBackground">
+
+				<include
+					layout="@layout/activity_logs" />
+
+			</LinearLayout>
+
+		</android.support.v4.view.ViewPager>
+
+		<android.support.v4.widget.DrawerLayout
+			android:id="@+id/drawerLayout"
+			android:visibility="gone"
+			android:layout_height="match_parent"
+			android:layout_width="match_parent">
+
+			<include
+				layout="@layout/activity_main"/>
+
+			<LinearLayout
+				android:id="@+id/activity_mainLogsDrawerLinear"
+				android:layout_width="320dp"
+				android:layout_height="match_parent"
+				android:orientation="vertical"
+				android:layout_gravity="end"
+				android:padding="6dp"
+				android:background="@color/colorSecondaryBackground">
+
+				<android.support.v7.widget.RecyclerView
+					android:id="@+id/recyclerDrawerView"
+					android:gravity="start"
+					android:textColor="@color/colorText"
+					android:layout_width="fill_parent"
+					android:layout_height="match_parent"
+					android:layout_alignParentLeft="true">
+
+				</android.support.v7.widget.RecyclerView>
+
+			</LinearLayout>
+
+		</android.support.v4.widget.DrawerLayout>
+
+	</LinearLayout>
+
+	<android.support.design.widget.NavigationView
+		android:layout_width="wrap_content"
+		android:layout_height="0dp"
+		app:menu="@menu/navigation_menu"
+		android:layout_gravity="start"
+		app:headerLayout="@layout/nav_header"
+		android:id="@+id/drawerNavigationView"
+	/>
+
+	<SlidingDrawer
+		android:orientation="horizontal"
+		android:id="@+id/slidingDrawer" 
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent" 
+		android:handle="@+id/holder" 
+		android:content="@+id/content" 
+		android:rotation="180.0"> 		
+		<Button
+			android:orientation="vertical"
+			android:id="@+id/holder" 
+			android:background="@drawable/bt"
+			android:layout_width="30.0dip" 
+			android:layout_height="55.0dip" 
+			android:layout_alignParentTop="true"
+			android:rotation="180.0" /> 	
+		<LinearLayout android:gravity="center" 
+			android:orientation="vertical"
+			android:id="@+id/content" 
+			android:layout_width="fill_parent" 
+			android:layout_height="fill_parent"
+			android:rotation="180.0"> 			
+			<include layout="@layout/drawer" /> 		
+		</LinearLayout>
+ 	</SlidingDrawer>
+</android.support.v4.widget.DrawerLayout>

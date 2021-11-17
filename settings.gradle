@@ -1,0 +1,2 @@
+include ':paygen-ssh-android'
+include ':style', ':service', ':app'

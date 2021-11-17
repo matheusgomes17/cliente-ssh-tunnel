@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:orientation="vertical"
+	android:id="@+id/Layout1"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/ripple_effect_two">
+
+	<com.jetradarmobile.snowfall.SnowfallView
+		xmlns:edsonsnow="http://schemas.android.com/apk/res-auto"
+		xmlns:norem="http://schemas.android.com/apk/res-auto"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		edsonsnow:snowflakesNum="250"
+		edsonsnow:snowflakeAlphaMin="150"
+		edsonsnow:snowflakeAlphaMax="255"
+		edsonsnow:snowflakeAngleMax="5"
+		norem:snowflakeSizeMin="8dp"
+		norem:snowflakeSizeMax="30dp"
+		norem:snowflakeSpeedMin="4"
+		norem:snowflakeSpeedMax="12"
+		norem:snowflakesFadingEnabled="true"
+		norem:snowflakesAlreadyFalling="false"
+		norem:snowflakeImage="@drawable/nv"/>
+
+	<LinearLayout
+		android:focusable="true"
+		android:focusableInTouchMode="true"
+		android:layout_width="fill_parent"
+		android:layout_marginTop="20dp"
+		android:layout_height="fill_parent"
+		android:orientation="vertical">
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="H-one Black Bravo"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:gravity="center"
+			android:textColor="#FFFFFF"
+			android:layout_marginBottom="50dp"/>
+
+		<LinearLayout
+			android:background="@drawable/nv1"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:orientation="vertical">
+
+			<TextView
+				android:layout_width="100dp"
+				android:layout_height="100dp"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:background="@drawable/logox"
+				android:gravity="center"
+				android:layout_gravity="center"
+				android:textSize="0sp"
+				android:layout_marginTop="59dp"/>
+
+			<TextView
+				android:layout_width="280dp"
+				android:layout_height="wrap_content"
+				android:text="-------------------------------------------------     𝐎 𝐜𝐚̃𝐨 𝐞 𝐦𝐚𝐧𝐬𝐨 𝐛𝐫𝐚𝐯𝐨 𝐞́ 𝐨 𝐝𝐨𝐧𝐨 🐕       -------------------------------------------------"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:textSize="19sp"
+				android:layout_gravity="center"
+				android:background="@drawable/bg1"
+				android:gravity="center"
+				android:layout_marginTop="10dp"/>
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="280dp"
+				android:layout_height="60.0dip"
+				android:textColor="#fffcfcfc"
+				android:gravity="center"
+				android:layout_gravity="center"
+				android:layout_marginTop="44dp">
+
+				<Button
+					android:textSize="0.0sp"
+					android:autoLink="web"
+					android:background="@drawable/image_16"
+					android:layout_width="60.0dip"
+					android:layout_height="60.0dip"
+					android:text="https://www.speedtest.net/pt"
+					android:id="@+id/drawerButton1"
+					android:layout_marginLeft="40dp"/>
+
+				<Button
+					android:textSize="0.0sp"
+					android:autoLink="web"
+					android:background="@drawable/image_14"
+					android:layout_width="60.0dip"
+					android:layout_height="60.0dip"
+					android:text="https://t.me/Heliosshvpn"
+					android:layout_marginLeft="10dp"/>
+
+				<Button
+					android:textSize="0.0sp"
+					android:autoLink="web"
+					android:background="@drawable/image_15"
+					android:layout_width="60.0dip"
+					android:layout_height="60.0dip"
+					android:text="https://is.gd/jwzS0z"
+					android:gravity="center_horizontal"
+					android:layout_gravity="center_vertical"
+					android:layout_margin="10dp"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_height="30dp"
+				android:layout_width="match_parent"
+				android:orientation="horizontal"
+				android:gravity="center"
+				android:paddingBottom="10dp">
+
+			</LinearLayout>
+
+			<Button
+				android:textSize="0.0sp"
+				android:autoLink="web"
+				android:background="@drawable/honeblack"
+				android:layout_width="300.0dip"
+				android:layout_height="60.0dip"
+				android:text="https://t.me/Heliosshvpn"
+				android:gravity="center"
+				android:layout_marginTop="10dp"
+				android:layout_gravity="center"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</RelativeLayout>
+

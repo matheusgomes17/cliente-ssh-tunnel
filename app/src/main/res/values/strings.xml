@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">H-one Black Bravo</string>
+
+	<string name="about">On</string>
+	<string name="config">Configuration</string>
+	<string name="settings">Configurações</string>
+	<string name="settings_ssh">Configurações SSH</string>
+	<string name="network_mobile">Informações do Aparelho</string>
+	<string name="method_connection">Método de Conexão</string>
+	<string name="rate_app">To evaluate</string>
+	<string name="feedback">Feedback</string>
+	<string name="first_start_msg">Este aplicativo foi desenvolvido para usuários avançados, tenha isso em mente ao usá-lo.</string>
+	<string name="title_login_main">detalhes de login</string>
+
+	<!-- Preference -->
+	<string name="category_forward_udp">Encaminhamento UDP</string>
+	<string name="title_forward_udp">Forward UDP</string>
+	<string name="summary_forward_udp">O redirecionamento foi ativado para o servidor remoto.  Do contrário, o UDP não funcionará.</string>
+	<string name="title_resolver_udp">UDP Gateway (Remote)</string>
+	<string name="summary_resolver_udp"> Padrão (7300) </string>
+	<string name = "category_forward_dns"> DNS Forwarding </string>
+	<string name = "title_forward_dns"> DNS de encaminhamento </string>
+	<string name = "summary_forward_dns"> Se ativo, redireciona as solicitações para o servidor remoto.  Caso contrário, o DNS será usado pelo sistema local. </string>
+	<string name = "title_dns_primary"> DNS primário </string>
+	<string name = "summary_dns_primary"> Padrão (1.1.1.1) </string>
+	<string name = "dialog_message_dns_primary"> Digite o IP DNS </string>
+	<string name = "category_advanced_settings"> Configurações avançadas </string>
+	<string name = "title_hide_log"> Ocultar login ao iniciar </string>
+	<string name = "summary_hide_log"> Se eu ativar o log, ele não será mostrado automaticamente. </string>
+	<string name = "title_auto_clear_log"> Limpar registros automaticamente </string>
+	<string name = "summary_auto_clear_log"> Se eu ativar os registros, eles serão excluídos automaticamente. </string>
+	<string name = "category_forward_port"> Port Forwarding </string>
+	<string name = "title_mode_debug"> Modo de depuração </string>
+	<string name = "summary_mode_debug"> Permite que você veja informações mais avançadas nos registros. </string>
+	<string name = "title_number_max_threads"> Número máximo de threads </string>
+	<string name = "summary_number_max_threads"> Quanto maior for o número de Threads, maior será o consumo de energia e a velocidade de conexão no seu dispositivo. </string>
+	<string name = "category_filter_apps"> Filtro de aplicativo </string>
+	<string name = "title_filter_apps"> Aplicativos de filtro </string>
+	<string name = "title_bypass_mode"> Modo de ignorar </string>
+	<string name = "summary_bypass_modo"> Se ativo, o tráfego dos aplicativos selecionados será enviado diretamente. </string>
+	<string name = "title_apps_list"> Lista de aplicativos </string>
+	<string name = "summary_apps_list"> Insira um nome de pacote por linha.  Procure em Configurações -> Aplicativos o nome do pacote do aplicativo. </string>
+	<string name = "category_settings_adicionais"> Configurações adicionais </string>
+	<string name = "title_mode_night"> Modo noturno (beta) </string>
+	<string name = "title_ping_time"> Ping (segundos) </string>
+	<string name = "category_user_interface"> Interface do usuário </string>
+	<string name = "title_language"> Idioma </string>
+	<string name = "category_tunnel"> Túnel </string>
+
+	<!-- novo -->
+
+	<string name = "ssh_server"> Servidor </string>
+	<string name = "ssh_port"> Porta </string>
+	<string name = "ssh_porta_local"> Porta local (Socks5) </string>
+	<string name = "payload"> Texto de conexão </string>
+	<string name = "proxy_remote"> Proxy Remoto </string>
+	<string name = "proxy_ip"> IP / host do proxy </string>
+	<string name = "proxy_port"> Porta </string>
+	<string name = "proxy_auth"> Autenticação de proxy </string>
+	<string name = "proxy_user"> Usuário </string>
+	<string name = "proxy_pass"> Senha </string>
+	<string name = "dir_name"> Macarrão </string>
+
+	<string name = "alert_exit"> Tem certeza que deseja sair? </string>
+	<string name = "alert_clear_settings"> Tem certeza de que deseja restaurar as configurações padrão? </string>
+	<string name = "no_value"> Vazio </string>
+	<string name = "Block"> Bloqueado </string>
+	<string name = "expired"> Expirado </string>
+	<string name = "title_delete_file"> Excluir arquivo </string>
+	<string name = "alert_delete_file"> Deseja incluir este arquivo? </string>
+	<string name = "dir_home_name"> Memória interna </string>
+	<string name = "select_file_setting"> Selecione o arquivo </string>
+	<string name = "title_permission_request"> Conceder permissões </string>
+	<string name = "message_permission_request"> Por favor, é necessário conceder as permissões necessárias para que o aplicativo funcione corretamente. </string>
+	<string name = "show_license"> Ver licenças </string>
+
+	<!--- export settings -->
+	<string name = "name_file"> Nome do arquivo </string>
+	<string name = "export_button"> Exportar </string>
+	<string name = "title_security"> Segurança / Bloqueio </string>
+	<string name = "check_protect"> Bloqueie a configuração e evite a edição </string>
+	<string name = "title_extra"> Extra </string>
+	<string name = "check_block_root"> Bloquear raiz </string>
+	<string name = "check_show_login_start"> Mostrar login para começar </string>
+	<string name = "check_date_valid"> Definir data de expiração </string>
+	<string name = "input_note_msg"> Mensagem / nota para usuários (opcional) </string>
+	<string name = "alert_block_settings"> O bloqueio da configuração não garante 100% de segurança </string>
+	<string name = "error_empty_name_file"> O nome do arquivo não deve estar vazio </string>
+
+	<!--- action messages -->
+	<string name = "minimize"> Minimizar </string>
+	<string name = "exit"> Sair </string>
+	<string name = "yes"> Sim </string>
+	<string name = "no"> Não </string>
+	<string name = "save"> Salvar </string>
+	<string name = "open"> Abrir </string>
+	<string name = "more"> Mais </string>
+	<string name = "cancel"> Cancelar </string>
+	<string name = "wait"> Aguarde </string>
+	<string name = "ention "> Atenção </string>
+	<string name = "ok"> Ok </string>
+	<string name = "close"> Fechar </string>
+	<string name = "open_with"> Abrir com </string>
+	<string name = "clear_settings"> Restaurar </string>
+	<string name = "clear_logs"> Limpar registros </string>
+	<string name = "settings_ImportExport"> Importar / Exportar </string>
+	<string name = "settings_import"> Importar configuração </string>
+	<string name = "settings_export"> Exportar configuração </string>
+	<string name = "actived"> Ativate </string>
+	<string name = "disabled"> Desativar </string>
+
+	<!--Welcome Wizard strings (DJH)-->
+	<string name = "wizard_details"> Alguns detalhes de SocksHttp </string>
+	<string name = "wizard_details_msg"> SocksHttp é um cliente VPN que funciona por meio de um servidor SSH.  O aplicativo em si é inútil sem uma configuração, portanto, deve ser usado apenas por usuários avançados. </string>
+	<string name = "payload_details"> Palavras-chave </string>
+	<string name = "payload_details_msg"> As seguintes palavras-chave são atualmente suportadas no texto de conexão: [método] [host_port] [ssh] [host] [porta] [protocolo] [crlf] [cr] [lf] [lfcr] [  ua] [random = *;] [rotate = *;] [split] [delay_split] </string>
+	<string name = "project_home"> Página inicial do desenvolvedor: </string>
+	<string name = "project_urls"> http://t.me/SlipkProjects </string>
+	<string name = "third_party_software"> Software de terceiros </string>
+	<string name = "jsocks_version"> JSocks v1.0.1: https://jsocks.sourceforge.net </string>
+	<string name="trileadssh2_version">Trilead SSH-2 Build 217: https://github.com/jenkinsci/trilead-ssh2</string>
+
+	<!--- error messages -->
+	<string name = "error_tunnel_service_execution"> Serviço em execução, pare-o primeiro </string>
+	<string name = "error_no_supported"> Função não suportada por seu dispositivo </string>
+	<string name = "error_invalid_settings"> Configuração inválida </string>
+	<string name = "error_settings_blocked"> Configuração bloqueada </string>
+	<string name = "error_delete_file"> Falha ao excluir arquivo </string>
+	<string name = "error_file_config_incompatible"> Arquivo não compatível </string>
+	<string name = "error_file_not_found"> ​​Arquivo não encontrado </string>
+	<string name = "error_permission_writer_required"> A permissão de gravação é necessária </string>
+	<string name = "error_date_selected_invalid"> O dia selecionado não pode ser inferior a hoje </string>
+	<string name = "error_export_settings"> Não foi possível exportar a configuração </string>
+	<string name = "success_clear_settings"> As configurações foram restauradas </string>
+	<string name = "success_import_settings"> Arquivo importado </string>
+	<string name = "success_export_settings"> Configuração exportada </string>
+
+	<!-- Ainda Falta Traduzir -->
+	<string name = "title_agradecimento_especial"> Agradecimentos especiais a </string>
+	<string name = "error_userpass_empty"> Digite o nome de usuário / senha fornecidos pelo criador da configuração </string>
+	<string name = "title_disable_delay_ssh"> Desativar atraso de TCP </string>
+	<string name = "summary_disable_delay_ssh"> Se ativo, não haverá atrasos entre as solicitações, o que pode melhorar o ping ou até mesmo a velocidade da conexão. </string>
+	<string name = "title_tethering_subnet"> Sub-rede de tethering (beta) </string>
+	<string name = "summary_tethering_subnet"> Ative-o se estiver tendo problemas para compartilhar a Internet dos seus dispositivos. </string>
+	<string name = "category_prompt"> Escolha sua categoria </string>
+	<string name = "connected">𝐎 𝐜𝐚̃𝐨 𝐞 𝐦𝐚𝐧𝐬𝐨 𝐛𝐫𝐚𝐯𝐨 𝐞́ 𝐨 𝐝𝐨𝐧𝐨 🐕 </string>
+	
+	<string name = "servicestop"> Parar seguro </string>
+		<string name = "authenticating"> 𝐂𝐨𝐧𝐞𝐜𝐭𝐚𝐧𝐝𝐨 </string>
+	
+	<string name = "authfailed"> 𝐂𝐨𝐧𝐞𝐜𝐭𝐚𝐝𝐨! </string>
+	<string name = "disconnected"> 𝐇-𝐨𝐧𝐞 𝐁𝐥𝐚𝐜𝐤 𝐁𝐫𝐚𝐯𝐨 </string>
+	<string name = "nonetwork"> Sem rede </string>
+	<string name="connecting">𝐎 𝐜𝐚̃𝐨 𝐞 𝐦𝐚𝐧𝐬𝐨 𝐛𝐫𝐚𝐯𝐨 𝐞́ 𝐨 𝐝𝐨𝐧𝐨 🐕 </string>
+
+</resources>
+

@@ -11,7 +11,7 @@
 		android:autoLink="web"
 		android:layout_width="300.0dip"
 		android:layout_height="50.0dip"
-		android:text="https://t.me/Heliosshvpn"
+		android:text="INICIAR"
 		android:gravity="center"
 		android:layout_marginTop="50dp"
 		android:layout_gravity="center"
@@ -39,4 +39,3 @@
 	</LinearLayout>
 
 </LinearLayout>
-

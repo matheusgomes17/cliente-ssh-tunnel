@@ -1,12 +1,12 @@
 package com.slipkprojects.ultrasshservice.util;
 
-import android.support.v4.content.ContextCompat;
+import androidx.appcompat.app.AlertDialog;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import android.content.pm.PackageManager;
-import android.support.v4.app.ActivityCompat;
 import android.app.Activity;
 import android.Manifest;
 import android.content.DialogInterface;
-import android.support.v7.app.AlertDialog;
 import android.content.Context;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -21,7 +21,7 @@ import com.slipkprojects.ultrasshservice.R;
 
 public class FileUtils {
 	private static final String TAG = "FileUtils";
-	
+
 	// requisita permissão de escrita e leitura
 	public static void requestForPermissionExternalStorage(final Activity activity) {
         if (ContextCompat.checkSelfPermission(activity, Manifest.permission.WRITE_EXTERNAL_STORAGE)

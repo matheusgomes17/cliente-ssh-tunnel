@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">H-one Black Bravo</string>
+    <string name="app_name">DaxVPN</string>
 
 	<string name="about">On</string>
 	<string name="config">Configuration</string>
@@ -99,7 +99,7 @@
 	<string name = "more"> Mais </string>
 	<string name = "cancel"> Cancelar </string>
 	<string name = "wait"> Aguarde </string>
-	<string name = "ention "> Atenção </string>
+	<string name = "ention">" Atenção"</string>
 	<string name = "ok"> Ok </string>
 	<string name = "close"> Fechar </string>
 	<string name = "open_with"> Abrir com </string>
@@ -118,7 +118,7 @@
 	<string name = "payload_details_msg"> As seguintes palavras-chave são atualmente suportadas no texto de conexão: [método] [host_port] [ssh] [host] [porta] [protocolo] [crlf] [cr] [lf] [lfcr] [  ua] [random = *;] [rotate = *;] [split] [delay_split] </string>
 	<string name = "project_home"> Página inicial do desenvolvedor: </string>
 	<string name = "project_urls"> http://t.me/SlipkProjects </string>
-	<string name = "third_party_software"> Software de terceiros </string>
+	<string name = "third_party_software">" Bloqueado"</string>
 	<string name = "jsocks_version"> JSocks v1.0.1: https://jsocks.sourceforge.net </string>
 	<string name="trileadssh2_version">Trilead SSH-2 Build 217: https://github.com/jenkinsci/trilead-ssh2</string>
 
@@ -145,7 +145,7 @@
 	<string name = "title_tethering_subnet"> Sub-rede de tethering (beta) </string>
 	<string name = "summary_tethering_subnet"> Ative-o se estiver tendo problemas para compartilhar a Internet dos seus dispositivos. </string>
 	<string name = "category_prompt"> Escolha sua categoria </string>
-	<string name = "connected">𝐎 𝐜𝐚̃𝐨 𝐞 𝐦𝐚𝐧𝐬𝐨 𝐛𝐫𝐚𝐯𝐨 𝐞́ 𝐨 𝐝𝐨𝐧𝐨 🐕 </string>
+	<string name = "connected">connected</string>
 	
 	<string name = "servicestop"> Parar seguro </string>
 		<string name = "authenticating"> 𝐂𝐨𝐧𝐞𝐜𝐭𝐚𝐧𝐝𝐨 </string>
@@ -153,7 +153,9 @@
 	<string name = "authfailed"> 𝐂𝐨𝐧𝐞𝐜𝐭𝐚𝐝𝐨! </string>
 	<string name = "disconnected"> 𝐇-𝐨𝐧𝐞 𝐁𝐥𝐚𝐜𝐤 𝐁𝐫𝐚𝐯𝐨 </string>
 	<string name = "nonetwork"> Sem rede </string>
-	<string name="connecting">𝐎 𝐜𝐚̃𝐨 𝐞 𝐦𝐚𝐧𝐬𝐨 𝐛𝐫𝐚𝐯𝐨 𝐞́ 𝐨 𝐝𝐨𝐧𝐨 🐕 </string>
+	<string name="connecting">connecting</string>
+	<string name="blocked">Locked</string>
+	<string name="attention">Attention</string>
 
 </resources>
 

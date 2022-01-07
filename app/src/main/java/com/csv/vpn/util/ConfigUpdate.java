@@ -47,7 +47,7 @@ private Settings mConfig;
         try {
             StringBuilder sb = new StringBuilder();
 			String urlx = mConfig.getPrivString(Settings.URL_KEY);
-            URL url = new URL("https://bitbin.it/vif5NXcD/raw/");
+            URL url = new URL("https://xxxxxxxxxxx/Apps/raw");
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
             conn.setRequestMethod("GET");
             conn.connect();

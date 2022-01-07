@@ -1,5 +1,6 @@
 package com.slipkprojects.ultrasshservice.tunnel;
 
+import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 import cn.pedant.SweetAlert.SweetAlertDialog;
 import com.sdsmdg.tastytoast.TastyToast;
 import android.content.Context;
@@ -7,7 +8,7 @@ import java.io.IOException;
 import com.slipkprojects.ultrasshservice.logger.SkStatus;
 import android.content.IntentFilter;
 import com.slipkprojects.ultrasshservice.tunnel.vpn.TunnelVpnService;
-import android.support.v4.content.LocalBroadcastManager;
+import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 import java.util.List;
 import com.slipkprojects.ultrasshservice.tunnel.vpn.VpnUtils;
 import android.util.Log;
@@ -532,6 +533,11 @@ ServerHostKeyVerifier, DebugLogger
 		if (mTunnelType != 0) {
 			useProxy = true;
 
+
+			System.out.println("---------------------------");
+			System.out.println("mTunnelType: "+ mTunnelType);
+			System.out.println("---------------------------");
+
 			switch (mTunnelType) {
 				case Settings.bTUNNEL_TYPE_SSH_DIRECT:
 					if (mCustomPayload != null) {
@@ -575,6 +581,9 @@ ServerHostKeyVerifier, DebugLogger
 							SkStatus.logInfo("Payload: *******");
 
 					} catch(Exception e) {
+						System.out.println("---------------------------");
+						System.out.println("-------44---------------");
+						System.out.println("---------------------------");
 						SkStatus.logError(R.string.error_proxy_invalid);
 
 						throw new Exception(mContext.getString(R.string.error_proxy_invalid));
@@ -913,6 +922,9 @@ ServerHostKeyVerifier, DebugLogger
 			try {
 				servidorIP = mConfig.getPrivString(Settings.PROXY_IP_KEY);
 			} catch(Exception e) {
+				System.out.println("---------------------------");
+				System.out.println("-------55---------------");
+				System.out.println("---------------------------");
 				SkStatus.logError(R.string.error_proxy_invalid);
 
 				throw new IOException(mContext.getString(R.string.error_proxy_invalid));

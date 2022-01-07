@@ -15,7 +15,7 @@
 		<LinearLayout
 			android:orientation="vertical"
 			android:layout_margin="5dp"
-			android:id="@+id/splash"
+			android:id="@+id/splash2"
 			android:background="@drawable/logox"
 			android:layout_width="100.0dip"
 			android:layout_height="100.0dip"
@@ -25,7 +25,6 @@
 
 		<TextView
 			android:id="@+id/app_name"
-			android:fontFamily="@drawable/googlesans"
 			android:textSize="30.0sp"
 			android:textStyle="bold"
 			android:textColor="#ff0000"

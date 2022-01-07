@@ -11,7 +11,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-	<android.support.design.widget.TextInputLayout
+	<com.google.android.material.textfield.TextInputLayout
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:layout_marginTop="8dp"
@@ -19,7 +19,7 @@
 		android:layout_marginRight="4dp"
 		android:layout_marginBottom="4dp">
 		
-    	<android.support.design.widget.TextInputEditText
+    	<com.google.android.material.textfield.TextInputEditText
             android:id="@+id/username"
             android:inputType="text"
 			android:layout_width="match_parent"
@@ -27,7 +27,7 @@
             android:textColor="@color/colorText"
 			android:hint="@string/auth_username" />
 		
-	</android.support.design.widget.TextInputLayout>
+	</com.google.android.material.textfield.TextInputLayout>
 	
 	<RelativeLayout
 		android:layout_height="wrap_content"
@@ -38,12 +38,12 @@
 		android:layout_marginBottom="4dp"
 		android:orientation="horizontal">
 		
-	<android.support.design.widget.TextInputLayout
+	<com.google.android.material.textfield.TextInputLayout
 		android:id="@+id/fragment_userpassTextInputLayout"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content">
 		
-    	<android.support.design.widget.TextInputEditText
+    	<com.google.android.material.textfield.TextInputEditText
             android:id="@+id/password"
             android:inputType="textPassword"
             android:layout_width="match_parent"
@@ -51,7 +51,7 @@
             android:textColor="@color/colorText"
 			android:hint="@string/password"/>
 		
-	</android.support.design.widget.TextInputLayout>
+	</com.google.android.material.textfield.TextInputLayout>
 	
 		<LinearLayout
 			android:layout_height="wrap_content"

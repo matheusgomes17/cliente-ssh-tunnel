@@ -1,9 +1,10 @@
 package com.csv.vpn.activities;
 
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import com.sshpluspro.vpn.R;
-import android.support.v7.widget.Toolbar;
+import androidx.appcompat.widget.AppCompatCheckBox;
+import com.csv.vpn.R;
+import androidx.appcompat.widget.Toolbar;
 import android.widget.TextView;
 import android.widget.LinearLayout;
 import android.widget.EditText;
@@ -23,20 +24,20 @@ import java.util.concurrent.atomic.AtomicReference;
 import android.util.Log;
 import java.text.DateFormat;
 import java.util.Date;
+
+import com.google.android.material.textfield.TextInputLayout;
 import com.slipkprojects.ultrasshservice.util.FileUtils;
 import com.slipkprojects.ultrasshservice.config.Settings;
 import com.slipkprojects.ultrasshservice.config.ConfigParser;
-import android.support.v7.widget.AppCompatCheckBox;
 import java.io.FileOutputStream;
 import android.widget.CheckBox;
-import android.support.design.widget.TextInputLayout;
 
 public class ConfigExportFileActivity
 	extends BaseActivity
 		implements CompoundButton.OnCheckedChangeListener, View.OnClickListener
 {
 	private static final String TAG = ConfigExportFileActivity.class.getSimpleName();
-	
+
 	private Settings mConfig;
 	
 	@Override

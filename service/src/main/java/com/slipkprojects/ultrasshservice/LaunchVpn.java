@@ -3,6 +3,11 @@ package com.slipkprojects.ultrasshservice;
 import android.app.Activity;
 import android.os.Bundle;
 import android.content.Intent;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
+import androidx.core.widget.CompoundButtonCompat;
+import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 import com.slipkprojects.ultrasshservice.logger.SkStatus;
 import com.slipkprojects.ultrasshservice.logger.ConnectionStatus;
 import com.slipkprojects.ultrasshservice.tunnel.TunnelManagerHelper;
@@ -16,24 +21,21 @@ import com.slipkprojects.ultrasshservice.tunnel.TunnelUtils;
 import android.widget.EditText;
 import android.text.InputType;
 import android.text.method.PasswordTransformationMethod;
-import android.support.v7.app.AlertDialog;
 import android.view.View;
 import android.annotation.SuppressLint;
 import android.widget.CheckBox;
-import android.support.v4.widget.CompoundButtonCompat;
 import android.widget.CompoundButton;
 import android.content.DialogInterface;
 import android.view.View.OnClickListener;
 import android.content.Context;
 import android.content.ServiceConnection;
 import android.os.IBinder;
-import android.support.v4.content.LocalBroadcastManager;
+
 import android.os.RemoteException;
 import com.slipkprojects.ultrasshservice.config.PasswordCache;
 import android.content.SharedPreferences;
 import android.widget.ImageButton;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.app.AppCompatActivity;
+
 
 public class LaunchVpn extends AppCompatActivity
 	implements DialogInterface.OnCancelListener
@@ -47,6 +49,8 @@ public class LaunchVpn extends AppCompatActivity
 	private String mTransientAuthPW;
 	private boolean mhideLog = false;
 	private boolean isMostrarSenha = false;
+
+
 	
 	@Override
     public void onCreate(Bundle icicle) {
@@ -186,7 +190,15 @@ public class LaunchVpn extends AppCompatActivity
 						(mConfig.getPrivString(Settings.PROXY_IP_KEY).isEmpty() || mConfig.getPrivString(Settings.PROXY_PORTA_KEY).isEmpty())) {
 					SkStatus.updateStateString("USER_VPN_PASSWORD_CANCELLED", "", R.string.state_user_vpn_password_cancelled,
 						ConnectionStatus.LEVEL_NOTCONNECTED);
+					
 
+					System.out.println("---------------------------");
+					System.out.println("-------33---------------"+ prefs);
+					System.out.println("-------33---------------"+ prefs.getInt(Settings.TUNNELTYPE_KEY, Settings.bTUNNEL_TYPE_SSH_DIRECT));
+					System.out.println("-------33---------------"+ Settings.bTUNNEL_TYPE_SSH_PROXY);
+					System.out.println("-------33---------------"+ mConfig.getPrivString(Settings.PROXY_IP_KEY).isEmpty());
+					System.out.println("-------33---------------"+ mConfig.getPrivString(Settings.PROXY_PORTA_KEY).isEmpty());
+					System.out.println("---------------------------");
 					Toast.makeText(this, R.string.error_proxy_invalid,
 						Toast.LENGTH_SHORT).show();
 

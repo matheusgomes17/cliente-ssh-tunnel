@@ -154,10 +154,9 @@ public class CustomNativeLoader {
     }
 
     // Return Full path to the directory where native JNI libraries are stored.
-    private static String getNativeLibraryDir(Context context) {
+    private static String  getNativeLibraryDir (Context context) {
         ApplicationInfo appInfo = context.getApplicationInfo();
         return appInfo.nativeLibraryDir;
     }
 
 }
-

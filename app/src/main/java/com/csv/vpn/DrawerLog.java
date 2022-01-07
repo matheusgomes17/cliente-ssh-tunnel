@@ -1,13 +1,14 @@
 package com.csv.vpn;
 
-import android.support.v4.widget.DrawerLayout;
-import android.support.v7.widget.RecyclerView;
+
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 import java.util.ArrayList;
-import com.sshpluspro.vpn.R;
+import com.csv.vpn.R;
 import android.content.pm.PackageInfo;
 import com.csv.vpn.util.Utils;
-import android.support.v7.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import android.os.Build;
 import android.view.View;
 import android.app.Activity;
@@ -28,7 +29,7 @@ public class DrawerLog
 	implements LogsAdapter.OnItemClickListener
 {
 	private static final String TAG = DrawerLog.class.getSimpleName();
-	
+
 	private Activity mActivity;
 	private Handler mHandler;
 	private DrawerLayout drawerLayout;

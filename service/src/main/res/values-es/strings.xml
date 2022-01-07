@@ -55,8 +55,8 @@
     <string name="state_nonetwork">Esperando red</string>
     <string name="state_waitconnectretry">Esperando% ss segundos entre intentos de conexión</string>
     <string name="state_auth_pending">Esperando autenticación</string>
-    <string name="state_user_vpn_password">Waiting for user VPN password</string>
-	<string name="state_user_vpn_permission">Waiting for user permission to use VPN API</string>
+    <string name="state_user_vpn_password">" Aguardando a senha do usuário VPN "</string>
+	<string name="state_user_vpn_permission">" Aguardando permissão do usuário para usar VPN API "</string>
 	<string name="state_user_vpn_password_cancelled">VPN password input dialog cancelled</string>
     <string name="state_user_vpn_permission_cancelled">VPN API permission dialog cancelled</string>
     <string name="unknown_state">Estado desconocido</string>
@@ -75,10 +75,13 @@
 	<string name="error_internet_off">Por favor, conectese a internet</string>
 	<string name="error_empty_payload">El payload no puede quedar vacio</string>
 	<string name="error_empty_settings">Configurar correctamente para comenzar</string>
-	<string name="error_proxy_invalid">Proxy inválido</string>
+	<string name="error_proxy_invalid">Proxy inválido A</string>
 	<string name="error_server_ip_invalid">Servidor/IP inválido</string>
 	<string name="error_root_detected">Configuración bloqueada para dispositivos con acesso root</string>
 	<string name="error_vpn_sniffer_detected">Otro aplicativo VPN en ejecución fue detectado, detengalo</string>
 	<string name="error_save_settings">No fue posible guardar la configuración</string>
-	
+    <string name="stopping_service_ssh">Parando o serviço SSH</string>
+	<string name="starting_service_ssh">Iniciando serviço SSH</string>
+	<string name="state_connected">" Conectado "</string>
+
 </resources>

@@ -1,15 +1,20 @@
 package com.csv.vpn.activities;
 
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
+import androidx.appcompat.widget.Toolbar;
 import android.content.SharedPreferences;
 import android.widget.EditText;
 import android.widget.Button;
 import android.view.View.OnClickListener;
 import android.view.View;
 import android.widget.Toast;
-import com.sshpluspro.vpn.R;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
+import androidx.preference.Preference;
+import androidx.preference.PreferenceFragmentCompat;
+import androidx.preference.PreferenceScreen;
+import com.csv.vpn.R;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.app.DialogFragment;
@@ -27,14 +32,11 @@ import android.widget.AdapterView.OnItemClickListener;
 import java.util.List;
 import java.util.HashMap;
 import android.widget.SimpleAdapter;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v4.app.FragmentManager;
+
 import com.csv.vpn.preference.SettingsPreference;
 import com.slipkprojects.ultrasshservice.util.SkProtect;
-import android.support.v7.preference.PreferenceScreen;
-import android.support.v7.preference.PreferenceFragmentCompat;
-import android.support.v7.preference.Preference;
-import android.support.v4.app.Fragment;
+import androidx.preference.PreferenceScreen;
+import androidx.preference.Preference;
 import android.content.Intent;
 import com.csv.vpn.preference.SettingsSSHPreference;
 
@@ -42,7 +44,7 @@ public class ConfigGeralActivity extends BaseActivity
 	implements PreferenceFragmentCompat.OnPreferenceStartFragmentCallback
 {
 	public static String OPEN_SETTINGS_SSH = "openSSHScreen";
-	
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
 	{

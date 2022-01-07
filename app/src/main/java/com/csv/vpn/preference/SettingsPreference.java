@@ -2,29 +2,25 @@ package com.csv.vpn.preference;
 
 import android.content.ComponentName;
 import android.content.pm.PackageManager;
-import android.support.v7.preference.PreferenceFragmentCompat;
+import androidx.preference.*;
+import androidx.preference.ListPreference;
 import android.os.Bundle;
 import android.view.View;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
-import android.support.v7.preference.Preference;
-import android.support.v4.app.DialogFragment;
-import android.support.v7.preference.EditTextPreference;
+import androidx.fragment.app.DialogFragment;
 import android.widget.Toast;
 import android.view.View.OnClickListener;
 import android.content.SharedPreferences;
-import android.support.v7.preference.PreferenceManager;
-import android.support.v7.preference.CheckBoxPreference;
+
 import android.content.Intent;
 import com.csv.vpn.SocksHttpApp;
-import com.sshpluspro.vpn.R;
-import android.support.v7.preference.ListPreference;
+import com.csv.vpn.R;
 import android.content.Context;
-import android.support.v7.app.AppCompatDelegate;
+import androidx.appcompat.app.AppCompatDelegate;
 import com.slipkprojects.ultrasshservice.logger.SkStatus;
 import com.slipkprojects.ultrasshservice.config.SettingsConstants;
 import com.slipkprojects.ultrasshservice.config.Settings;
-import android.support.v7.preference.PreferenceScreen;
 import com.slipkprojects.ultrasshservice.logger.ConnectionStatus;
 import android.os.Handler;
 import android.app.Activity;
@@ -32,9 +28,9 @@ import com.csv.vpn.LauncherActivity;
 import android.app.PendingIntent;
 import android.app.AlarmManager;
 import android.os.Build;
-import android.support.v7.app.AlertDialog;
+import androidx.appcompat.app.AlertDialog;
 import com.csv.vpn.SocksHttpMainActivity;
-import android.support.v4.content.LocalBroadcastManager;
+import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 
 public class SettingsPreference extends PreferenceFragmentCompat
 	implements Preference.OnPreferenceChangeListener, SettingsConstants,
@@ -42,11 +38,11 @@ public class SettingsPreference extends PreferenceFragmentCompat
 {
 	private Handler mHandler;
 	private SharedPreferences mPref;
-	
+
 	public static final String
 		SSHSERVER_PREFERENCE_KEY = "screenSSHSettings",
 		ADVANCED_SCREEN_PREFERENCE_KEY = "screenAdvancedSettings";
-		
+
 	private String[] settings_disabled_keys = {
 		DNSFORWARD_KEY,
 		DNSRESOLVER_KEY,
@@ -89,17 +85,15 @@ public class SettingsPreference extends PreferenceFragmentCompat
 	{
         // Load the Preferences from the XML file
         setPreferencesFromResource(R.xml.app_preferences, root_key);
-		
+
 		mPref = getPreferenceManager().getDefaultSharedPreferences(getContext());
 		
-		Preference udpForwardPreference = (CheckBoxPreference)
-			findPreference(UDPFORWARD_KEY);
+		Preference udpForwardPreference = (CheckBoxPreference) findPreference(UDPFORWARD_KEY);
 		udpForwardPreference.setOnPreferenceChangeListener(this);
 		
-		Preference dnsForwardPreference = (CheckBoxPreference)
-			findPreference(DNSFORWARD_KEY);
+		Preference dnsForwardPreference = (CheckBoxPreference) findPreference(DNSFORWARD_KEY);
 		dnsForwardPreference.setOnPreferenceChangeListener(this);
-		
+
 		ListPreference modoNoturno = (ListPreference)
 			findPreference(MODO_NOTURNO_KEY);
 		modoNoturno.setOnPreferenceChangeListener(this);

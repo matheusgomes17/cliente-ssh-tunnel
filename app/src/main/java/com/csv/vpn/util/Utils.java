@@ -13,7 +13,7 @@ import android.view.inputmethod.InputMethodManager;
 import android.app.Activity;
 import android.view.WindowManager;
 import android.content.Intent;
-import android.support.v4.content.LocalBroadcastManager;
+import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 import android.os.Build;
 import com.slipkprojects.ultrasshservice.SocksHttpService;
 

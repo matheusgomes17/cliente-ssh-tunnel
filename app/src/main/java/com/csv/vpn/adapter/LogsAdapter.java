@@ -1,5 +1,6 @@
 package com.csv.vpn.adapter;
 
+
 import com.slipkprojects.ultrasshservice.logger.SkStatus;
 import com.slipkprojects.ultrasshservice.logger.LogItem;
 import java.util.Collections;
@@ -15,13 +16,13 @@ import java.text.SimpleDateFormat;
 import java.util.Locale;
 import android.os.Message;
 import android.os.Bundle;
-import android.support.v7.widget.RecyclerView.AdapterDataObserver;
-import android.support.v7.widget.LinearSnapHelper;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView.AdapterDataObserver;
+import androidx.recyclerview.widget.LinearSnapHelper;
+import androidx.recyclerview.widget.RecyclerView;
 import android.os.Handler;
-import android.support.v7.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import android.view.View;
-import com.hone.black.bravo.R;
+import com.csv.vpn.R;
 import android.text.Html;
 import com.slipkprojects.ultrasshservice.config.Settings;
 import android.view.MotionEvent;

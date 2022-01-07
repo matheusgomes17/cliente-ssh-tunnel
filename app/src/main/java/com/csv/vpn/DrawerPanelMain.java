@@ -1,17 +1,18 @@
 package com.csv.vpn;
 
 import android.app.Activity;
-import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.widget.Toolbar;
-import android.support.design.widget.NavigationView;
+import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.appcompat.widget.Toolbar;
+import com.google.android.material.navigation.NavigationView;
 import android.content.pm.PackageInfo;
 import com.csv.vpn.util.Utils;
-import android.support.v7.app.AppCompatActivity;
-import com.hone.black.bravo.R;
+import androidx.appcompat.app.AppCompatActivity;
+import com.csv.vpn.R;
 import android.view.View;
 import android.widget.TextView;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import android.view.MenuItem;
 import android.widget.Toast;
 import android.os.Build;
@@ -19,7 +20,6 @@ import android.content.Intent;
 import android.net.Uri;
 import com.csv.vpn.util.GoogleFeedbackUtils;
 import com.slipkprojects.ultrasshservice.logger.SkStatus;
-import android.support.v4.view.GravityCompat;
 import com.csv.vpn.activities.ConfigGeralActivity;
 import com.csv.vpn.activities.AboutActivity;
 
@@ -27,11 +27,11 @@ public class DrawerPanelMain
 	implements NavigationView.OnNavigationItemSelectedListener
 {
 	private AppCompatActivity mActivity;
-	
+
 	public DrawerPanelMain(AppCompatActivity activity) {
 		mActivity = activity;
 	}
-	
+
 
 	private DrawerLayout drawerLayout;
 	private ActionBarDrawerToggle toggle;

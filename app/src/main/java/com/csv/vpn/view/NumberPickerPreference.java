@@ -8,9 +8,9 @@ import android.view.ViewGroup;
 import android.view.Gravity;
 import android.view.View;
 import android.content.res.TypedArray;
-import android.support.v7.preference.DialogPreference;
-import android.support.v7.preference.PreferenceViewHolder;
-import android.support.v7.preference.PreferenceDialogFragmentCompat;
+import androidx.preference.DialogPreference;
+import androidx.preference.PreferenceViewHolder;
+import androidx.preference.PreferenceDialogFragmentCompat;
 
 public class NumberPickerPreference extends PreferenceDialogFragmentCompat {
 
@@ -18,8 +18,8 @@ public class NumberPickerPreference extends PreferenceDialogFragmentCompat {
     public static final int MAX_VALUE = 100;
     public static final int MIN_VALUE = 0;
     // enable or disable the 'circular behavior'
-    public static final boolean WRAP_SELECTOR_WHEEL = true; 
-	
+    public static final boolean WRAP_SELECTOR_WHEEL = true;
+
     private NumberPicker picker;
     private int value;
 

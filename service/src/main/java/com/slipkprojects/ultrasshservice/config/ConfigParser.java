@@ -119,7 +119,16 @@ public class ConfigParser
 				int mPortaLocal = Integer.parseInt(mConfigFile.getProperty(Settings.PORTA_LOCAL_KEY));
 				int mTunnelType = Settings.bTUNNEL_TYPE_SSH_DIRECT;
 
+				System.out.println("----------------------");
+				System.out.println("bTUNNEL_TYPE_SSH_PROXY"+ Settings.bTUNNEL_TYPE_SSH_PROXY);
+				System.out.println("----------------------");
+
 				String _tunnelType = mConfigFile.getProperty(Settings.TUNNELTYPE_KEY);
+
+				System.out.println("----------------------");
+				System.out.println("_tunnelType"+ _tunnelType);
+				System.out.println("----------------------");
+
 				if (!_tunnelType.isEmpty()) {
 					/**
 					 * Mantêm compatibilidade
@@ -131,6 +140,11 @@ public class ConfigParser
 						mTunnelType = Integer.parseInt(_tunnelType);
 					}
 				}
+
+
+				System.out.println("----------------------");
+				System.out.println("mTunnelType"+ mTunnelType);
+				System.out.println("----------------------");
 
 				if (mServidor == null) {
 					throw new Exception();

@@ -34,11 +34,11 @@
 				android:background="@drawable/background_rounded"
 				android:padding="5dp">
 
-				<android.support.design.widget.TextInputLayout
+				<com.google.android.material.textfield.TextInputLayout
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content">
 
-					<android.support.design.widget.TextInputEditText
+					<com.google.android.material.textfield.TextInputEditText
 						android:id="@+id/activity_config_exportNomeEdit"
 						android:layout_height="wrap_content"
 						android:layout_width="match_parent"
@@ -46,7 +46,7 @@
 						android:hint="@string/name_file"
 						android:ems="10"/>
 
-				</android.support.design.widget.TextInputLayout>
+				</com.google.android.material.textfield.TextInputLayout>
 
 				<Button
 					android:id="@+id/activity_config_exportButton"
@@ -68,7 +68,7 @@
 				android:layout_marginTop="5dp"
 				android:padding="5dp"/>
 
-			<android.support.v7.widget.AppCompatCheckBox
+			<androidx.appcompat.widget.AppCompatCheckBox
 				android:id="@+id/activity_config_exportProtegerCheck"
 				android:layout_height="wrap_content"
 				android:layout_width="wrap_content"
@@ -90,7 +90,7 @@
 					android:background="@color/colorSecondaryBackground"
 					android:padding="5dp"/>
 
-				<android.support.v7.widget.AppCompatCheckBox
+				<androidx.appcompat.widget.AppCompatCheckBox
 					android:id="@+id/activity_config_exportBlockRootCheck"
 					android:layout_height="wrap_content"
 					android:layout_width="match_parent"
@@ -98,7 +98,7 @@
 					android:layout_marginBottom="5dp"
 					android:hint="@string/check_block_root"/>
 
-				<android.support.v7.widget.AppCompatCheckBox
+				<androidx.appcompat.widget.AppCompatCheckBox
 					android:id="@+id/activity_config_exportShowLoginScreenCheck"
 					android:layout_height="wrap_content"
 					android:layout_width="match_parent"
@@ -112,7 +112,7 @@
 					android:orientation="horizontal"
 					android:paddingBottom="5dp">
 
-					<android.support.v7.widget.AppCompatCheckBox
+					<androidx.appcompat.widget.AppCompatCheckBox
 						android:id="@+id/activity_config_exportValidadeCheck"
 						android:layout_height="wrap_content"
 						android:layout_width="wrap_content"
@@ -131,12 +131,12 @@
 
 				</LinearLayout>
 
-				<android.support.design.widget.TextInputLayout
+				<com.google.android.material.textfield.TextInputLayout
 					android:id="@+id/activity_config_exportLayoutMensagemEdit"
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content">
 
-					<android.support.design.widget.TextInputEditText
+					<com.google.android.material.textfield.TextInputEditText
 						android:id="@+id/activity_config_exportMensagemEdit"
 						android:inputType="textMultiLine|textLongMessage"
 						android:layout_width="fill_parent"
@@ -146,7 +146,7 @@
 						android:textColor="@color/colorText"
 						android:hint="@string/input_note_msg"/>
 
-				</android.support.design.widget.TextInputLayout>
+				</com.google.android.material.textfield.TextInputLayout>
 
 			</LinearLayout>
 
@@ -155,4 +155,3 @@
 	</ScrollView>
 
 </LinearLayout>
-

@@ -1,8 +1,8 @@
-<android.support.v7.preference.PreferenceScreen
+<androidx.preference.PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android">
 	
 
-	<android.support.v7.preference.PreferenceCategory
+	<androidx.preference.PreferenceCategory
 		android:title="SSH Tunnel">
 		
 		<com.csv.vpn.view.SummaryEditTextPreference
@@ -21,10 +21,10 @@
 			android:singleLine="true"
 			android:dialogLayout="@layout/pref_dialog_number" />
 	
-	</android.support.v7.preference.PreferenceCategory>
+	</androidx.preference.PreferenceCategory>
 	
 		
-	<android.support.v7.preference.PreferenceCategory
+	<androidx.preference.PreferenceCategory
 		android:title="@string/title_auth">
 			
 		<com.csv.vpn.view.SummaryEditTextPreference
@@ -43,10 +43,10 @@
 			android:singleLine="true"
 			android:dialogLayout="@layout/pref_dialog_edittext_fix" />
 		
-	</android.support.v7.preference.PreferenceCategory>
+	</androidx.preference.PreferenceCategory>
 
 	
-	<android.support.v7.preference.PreferenceCategory
+	<androidx.preference.PreferenceCategory
 		android:title="@string/category_forward_port">
 
 		<com.csv.vpn.view.SummaryEditTextPreference
@@ -58,7 +58,7 @@
 			android:singleLine="true"
 			android:dialogLayout="@layout/pref_dialog_number" />
 
-	</android.support.v7.preference.PreferenceCategory>
+	</androidx.preference.PreferenceCategory>
 	
 	
-</android.support.v7.preference.PreferenceScreen>
+</androidx.preference.PreferenceScreen>

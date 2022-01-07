@@ -27,7 +27,7 @@
 		android:layout_width="match_parent"
 		android:orientation="vertical">
 
-		<android.support.v7.widget.RecyclerView
+		<androidx.recyclerview.widget.RecyclerView
 			android:id="@+id/recyclerLog"
 			android:gravity="start"
 			android:layout_width="fill_parent"
@@ -41,7 +41,7 @@
 		android:layout_alignParentBottom="true"
 		android:gravity="right">
 
-		<android.support.design.widget.FloatingActionButton
+		<com.google.android.material.floatingactionbutton.FloatingActionButton
 			android:layout_marginBottom="20dp"
 			android:layout_marginRight="20dp"
 			android:src="@drawable/ic_delete_forever_white_24dp"
@@ -52,5 +52,3 @@
 
 	</LinearLayout>
 </RelativeLayout>
-
-

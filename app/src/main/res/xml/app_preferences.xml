@@ -1,14 +1,14 @@
-<android.support.v7.preference.PreferenceScreen
+<androidx.preference.PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:app="http://schemas.android.com/apk/res-auto"
 	android:key="screenMain">
     
 	
-	<android.support.v7.preference.PreferenceCategory
+	<androidx.preference.PreferenceCategory
 		android:layout="@layout/preferences_category"
 		android:title="Connection">
 		
-		<android.support.v7.preference.CheckBoxPreference
+		<androidx.preference.CheckBoxPreference
 			android:key="udpForward"
 			android:summary="@string/summary_forward_udp"
 			android:title="@string/title_forward_udp" />
@@ -21,11 +21,11 @@
 			android:singleLine="true"
 			android:dialogLayout="@layout/pref_dialog_edittext_fix" />
 		
-		<android.support.v7.preference.CheckBoxPreference
+		<androidx.preference.CheckBoxPreference
 			android:summary="Connection auto reconnect every 55 seconds"
 			android:title="Reconnect" />
 		
-		<android.support.v7.preference.CheckBoxPreference
+		<androidx.preference.CheckBoxPreference
 			android:key="dnsForward"
 			android:summary="@string/summary_forward_dns"
 			android:title="@string/title_forward_dns" />
@@ -38,14 +38,14 @@
 			android:singleLine="true"
 			android:dialogLayout="@layout/pref_dialog_edittext_fix" />
 
-	</android.support.v7.preference.PreferenceCategory>
+	</androidx.preference.PreferenceCategory>
 	
 	
-	<android.support.v7.preference.PreferenceCategory
+	<androidx.preference.PreferenceCategory
 		android:layout="@layout/preferences_category"
 		android:title="More Settings">
 		
-		<android.support.v7.preference.ListPreference
+		<androidx.preference.ListPreference
         	android:key="modeNight"
 			android:defaultValue="off"
         	android:entries="@array/pref_modoNoturno_option_labels"
@@ -62,26 +62,26 @@
 			android:dialogLayout="@layout/pref_dialog_number"
 		/>
 		
-		<android.support.v7.preference.CheckBoxPreference
+		<androidx.preference.CheckBoxPreference
 			android:key="autoClearLogs"
 			android:summary="@string/summary_auto_clear_log"
 			android:title="@string/title_auto_clear_log"
 		/>
 
-		<android.support.v7.preference.CheckBoxPreference
+		<androidx.preference.CheckBoxPreference
 			android:key="hideLog"
 			android:summary="@string/summary_hide_log"
 			android:title="@string/title_hide_log"
 		/>
 		
-	</android.support.v7.preference.PreferenceCategory>
+	</androidx.preference.PreferenceCategory>
 	
 	
-	<android.support.v7.preference.PreferenceCategory
+	<androidx.preference.PreferenceCategory
 		android:layout="@layout/preferences_category"
 		android:title="@string/category_user_interface">
 	
-		<android.support.v7.preference.ListPreference
+		<androidx.preference.ListPreference
         	android:key="idioma"
 			android:defaultValue="default"
         	android:entries="@array/pref_idioma_option_labels"
@@ -89,14 +89,14 @@
         	android:title="@string/title_language"
 		/>
 		
-	</android.support.v7.preference.PreferenceCategory>
+	</androidx.preference.PreferenceCategory>
 	
 	
-	<android.support.v7.preference.Preference
+	<androidx.preference.Preference
     	android:key="screenAdvancedSettings"
 		app:fragment="com.csv.vpn.preference.SettingsAdvancedPreference"
         android:title="@string/category_advanced_settings"
 	/>
 	
 	
-</android.support.v7.preference.PreferenceScreen>
+</androidx.preference.PreferenceScreen>

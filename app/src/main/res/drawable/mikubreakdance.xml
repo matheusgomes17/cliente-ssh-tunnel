@@ -67,7 +67,7 @@
 		<Button
 			android:textStyle="bold"
 			android:textColor="#ffffffff"
-			android:id="@+id/activity_starterButtonMain"
+			android:id="@+id/activity_starterButtonMain2"
 			android:popupBackground="@drawable/bg1"
 			android:layout_width="128.0dip"
 			android:layout_height="40.0dip"

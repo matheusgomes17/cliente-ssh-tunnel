@@ -1,19 +1,19 @@
-<android.support.v7.preference.PreferenceScreen
+<androidx.preference.PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:app="http://schemas.android.com/apk/res-auto">
 
 
-	<android.support.v7.preference.PreferenceCategory
+	<androidx.preference.PreferenceCategory
 		android:layout="@layout/preferences_category"
 		android:title="@string/category_advanced_settings">
 		
-		<android.support.v7.preference.CheckBoxPreference
+		<androidx.preference.CheckBoxPreference
 			android:key="modeDebug"
 			android:summary="@string/summary_mode_debug"
 			android:title="@string/title_mode_debug"
 		/>
 
-		<android.support.v7.preference.ListPreference
+		<androidx.preference.Preference
         	android:key="numberMaxThreadSocks"
             android:title="@string/title_number_max_threads"
 			android:summary="@string/summary_number_max_threads"
@@ -22,37 +22,37 @@
         	android:entryValues="@array/pref_maxThreads_option_values"
 		/>
 		
-		<android.support.v7.preference.CheckBoxPreference
+		<androidx.preference.CheckBoxPreference
 			android:key="tetherSubnet"
 			android:summary="@string/summary_tethering_subnet"
 			android:title="@string/title_tethering_subnet"
 		/>
 		
-		<android.support.v7.preference.CheckBoxPreference
+		<androidx.preference.CheckBoxPreference
 			android:key="disableDelaySSH"
 			android:title="@string/title_disable_delay_ssh"
 			android:summary="@string/summary_disable_delay_ssh"
 		/>
 	
-	</android.support.v7.preference.PreferenceCategory>
+	</androidx.preference.PreferenceCategory>
 	
 	
-	<android.support.v7.preference.PreferenceCategory
+	<androidx.preference.PreferenceCategory
 		android:layout="@layout/preferences_category"
 		android:title="@string/category_filter_apps">
 	
-		<android.support.v7.preference.CheckBoxPreference
+		<androidx.preference.CheckBoxPreference
 			android:key="filterApps"
 			android:title="@string/title_filter_apps"
 		/>
 	
-		<android.support.v7.preference.CheckBoxPreference
+		<androidx.preference.CheckBoxPreference
 			android:key="filterBypassMode"
 			android:summary="@string/summary_bypass_modo"
 			android:title="@string/title_bypass_mode"
 		/>
 	
-		<android.support.v7.preference.EditTextPreference
+		<androidx.preference.EditTextPreference
             android:key="filterAppsList"
             android:title="@string/title_apps_list"
             android:summary="@string/summary_apps_list"
@@ -61,7 +61,7 @@
 			android:dialogLayout="@layout/pref_dialog_edittext_fix"
 		/>
 		
-	</android.support.v7.preference.PreferenceCategory>
+	</androidx.preference.PreferenceCategory>
 	
 	
-</android.support.v7.preference.PreferenceScreen>
+</androidx.preference.PreferenceScreen>

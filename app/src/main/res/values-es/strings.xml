@@ -2,7 +2,7 @@
 <resources xmlns:tools="http://schemas.android.com/tools"
   tools:ignore="MissingTranslation">
 	
-    <string name="app_name">H-one Black Bravo</string>
+    <string name="app_name">DaxVPN</string>
 	
 	<string name="about">On</string>
 	<string name="config">Configuration</string>
@@ -143,5 +143,15 @@
 	<string name="summary_disable_delay_ssh">If active there will be no delays between requests, which can improve ping or even the speed of the connection.</string>
 	<string name="title_tethering_subnet">Tethering Subnet (beta)</string>
 	<string name="summary_tethering_subnet">Enable it if youre having trouble sharing your devices internet.</string>
-	
+    <string name="connecting">connecting</string>
+	<string name="nonetwork">" Sem rede "</string>
+	<string name="disconnected">" 𝐇-𝐨𝐧𝐞 𝐁𝐥𝐚𝐜𝐤 𝐁𝐫𝐚𝐯𝐨 "</string>
+	<string name="authfailed">" 𝐂𝐨𝐧𝐞𝐜𝐭𝐚𝐝𝐨! "</string>
+	<string name="authenticating">" 𝐂𝐨𝐧𝐞𝐜𝐭𝐚𝐧𝐝𝐨 "</string>
+	<string name="servicestop">" Parar seguro "</string>
+	<string name="connected">connected</string>
+	<string name="category_prompt">" Escolha sua categoria "</string>
+	<string name="Block">" Bloqueado"</string>
+	<string name="ention">" Atenção"</string>
+
 </resources>

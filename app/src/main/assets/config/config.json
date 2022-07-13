@@ -1,1 +1,88 @@
-peukCXYMcbXEf/rPkTKJzWVkDh3ZkBah6OsMx1KMc7gaJGxnEBaQZfnGaU9Tf16JHGRJamOKPOmtzOLDki5nqPKiIRCtvumJKqzpWkxgrYLnxSH2BvvBZ7HvgRYF1/VPsELgw85FtLNElH8wLUOA2e+Kqxhqu7RaAdOg/Is2Tu4Zyh0pI+IilYMca4c1BuwHEi+4+eHkF+9EdmQUvOt8CNFQR9IC4nUOKNhDVfveMhuOA40rD3akhfj8bo/2KljVP56e+S2KaeMJyXMXt36Tzbj447MNU9IJ7SibT+V7ZiOt4/pqKouuU83KGVqppF3gW50T/FvghEMrSg25d0upYp8g9ELfdmqDLvhckfvRE848gmCdi8JpJNArCRySvuFfa3xrnm8IYeiIgW1sTfYqyl8G6YzB1onu4dgzXq9tIcRYxcRBH87lxQLlc2SpuuMxGa40/2Ldz4gJOxck1IYfVixWxL8LqWLFwMZYWod5DQkcxs7hXfv+gjaAL3KI/e2Xw2LvGaF4jhGUt9S087Doe6Z1TgUSvO9zVbDSRzeAFnSnIm+eYdp7AGTJi75FgPC2g6ophut3CaHBb62BJHsJdSuV9aawgJXv62F5YJnvh1KOBQoiwrfc7Rbgt4xGk7J+CKBegqPkzIIUd5HCbj5xFOMgdJYkxEwL4iT5su7QPcpkxI9uwP+SMapNJ05vCjYijFmxpjqscaBdcjw2M7CW5KSM14rn+mGddcOzRaSrQk4KkUZjwi2s3EJUEQv6rAuVWMo3zrCNDw5hZITf0aV1Q9zJJPGD6Fl0xyJq18e/Cyv7Fo4CbL6TgPBPtBaFZMaOtIzEIxhR/DjJRj2247Lc5iD/pB1TIUmJLm83aXfgUsB9kqQcaCiB0NcmfuIlcuN0BOIGTScw79IFpndLYyYhOQiDq8JphyhmrzwHcoDIJvq4kF9XeeLJQ9jcuAVcD1XBhnDakKj/3hWBjvFU0ODkJ4wyunbiC19R1vBjXEsE2fi03N+jnaf5e8Lj+td5DUX47JSwxPB/06fVT0Jb0ZkylCewvRs3uoZW2DjB3OFkISauMRq0p24Cy4fJAvLrCcW++9OJwBL2YnP6Iy4tn0MdN6ouVXh50r2JLFa7oqkDpdJHVkjtqBP1srY3x6Mmk2DP0mN0v05l8VdDD+Cfy4kESNMywLkupSk9kAnBbyfY8mse6v2KnxnQN6i2O6onO1ES3tVGgdboETn4tF93oiU5yy0k9cBUbDnDt1SpcHREt05LRx0RIyuPe+qxemcuJPV+Ka3dPAhEBjyPxRxxFlNM1/EyYLP0lcUm3IEpUkaCiNlvNr9IDHLkk95peWZcb2pdUF6/HEfKnkxdm8uQTrQa4qgrJxB33Y8TEM3BAH72v1TiGgJddnS5Xfeln3QX7WOI0apUAsbbYxa1Ehf19wV8+MHLYcrtb6+VIQ2gDP2xiVhbtLqnRPxxaFsNTfiGnQn2nkecjYLTQDIiUkdb+WYZtorFhmTJZZ/iEi4zYIl4jte8D7ALhHeFOog/Q3LnKJ+4r/yKjyRKS1zYlmz7LIy+kyX1lkqk0ciAjaLVrz8QH0esFZooLzQl44XEAmzSg7HPTRxVO1ftevKAcohgKTNqo+ktE3fvGnBr3m/bMkjUcgjEepaHAftrqVIa7eyTH7bbhJ7r7o70iXgTLh/Uy40JdXZHyNe+WTHMpPS9bZWkHbKd4FVFVoRSCvzKV7mIohaPBJ510MuOxqT1p/9FC5mic2KbV/tVu7Jr+4/Q+N4GHNcIY4RVacqVWKlnKnJqjaM6r+oJq+PO2VeEz6JI+bvlLJLXWdqCrfm2TBNC7ZlhShA=
+{
+  "Version": "1.1.6",
+  "ReleaseNotes": "",
+  "Servers": [
+      {
+          "Name": "INTERNET UNLINK",
+          "FLAG": "CO.png",
+          "ServerIP": "dns.dayax.net",
+          "ServerPort": "8080",
+          "SSLPort": "443",
+          "ProxyIP": "dns.dayax.net",
+          "ProxyPort": "8443",
+          "ServerUser": "andres",
+          "ServerPass": "aya",
+          "sInfo": ""
+      },{
+          "Name": "INTERNET UNLINK",
+          "FLAG": "CO.png",
+          "ServerIP": "dns.dayax.net",
+          "ServerPort": "8080",
+          "SSLPort": "443",
+          "ProxyIP": "dns.dayax.net",
+          "ProxyPort": "8443",
+          "ServerUser": "andres",
+          "ServerPass": "aya",
+          "sInfo": ""
+      },
+      {
+        "Name": "CLOUDFLARE",
+        "FLAG": "CO.png",
+        "ServerIP": "104.21.46.68",
+        "ServerPort": "8080",
+        "SSLPort": "443",
+        "ProxyIP": "dns.dayax.net",
+        "ProxyPort": "8443",
+        "ServerUser": "andres",
+        "ServerPass": "aya",
+        "sInfo": ""
+    }
+  ],
+  "Networks": [
+      {
+          "Name": "Movistar Redes",
+          "Payload": "",
+          "SNI": "www.whatsapp.net",
+          "Info": "3",
+          "tunnelType": "ssl",
+          "useTimer": false,
+          "isSSL": true
+      },
+      {
+          "Name": "Wom Ilimitado Sin Redes",
+          "Payload": "GET http://www.wom.co/ HTTP/1.1[crlf]Host: www.wom.co[crlf] Access-Control-Allow-Credentials: true, true[lf] Access-Control-Allow-Headers: X-Requested-With,Content-Type, X-Requested-With,Content-Type[lf] Access-Control-Allow-Methods: GET,PUT,OPTIONS,POST,DELETE, GET,PUT,OPTIONS,POST,DELETE[lf] Age: 8, 8[lf] Cache-Control: max[lf] public[lf] Connection: keep-alive[lf] Content-Type: text/html; charset=UTF-8[crlf]Content-Length: 9999999999999[crlf]UseDNS: Yes[crlf]Vary: Accept-Encoding[crlf][raw][crlf][crlf][crlf]",
+          "SNI": "",
+          "Info": "1",
+          "tunnelType": "direct",
+          "useTimer": false,
+          "isSSL": false
+      },
+      {
+          "Name": "Avantel Sin Redes",
+          "Payload": "",
+          "SNI": "Www.gov.co",
+          "Info": "3",
+          "tunnelType": "ssl",
+          "useTimer": false,
+          "isSSL": true
+      },
+      {
+          "Name": "Movistar Sin Redes",
+          "Payload": "",
+          "SNI": "www.segurosbolivar.com",
+          "Info": "3",
+          "tunnelType": "ssl",
+          "useTimer": false,
+          "isSSL": true
+      },
+      {
+        "Name": "SSL + PAYLOAD",
+        "Payload": "CONNECT  http://www.mintic.gov.co HTTP/1.1[crlf]Host: dns.dayax.net[crlf]Connection:  upgrade[crlf]upgrade:  websocket[crlf]CONNECT  [host_port]  [protocol][crlf][crlf]",
+        "SNI": "www.mintic.gov.co",
+        "Info": "3",
+        "tunnelType": "sslp",
+        "useTimer": false,
+        "isSSL": true
+    }
+  ]
+}

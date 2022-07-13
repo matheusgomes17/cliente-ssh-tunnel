@@ -4,12 +4,16 @@ import android.content.*;
 import android.content.pm.*;
 import android.net.*;
 import android.os.*;
-import android.support.v4.content.*;
+
+
 //import com.csv.vpn.Long.*;
 //import com.csv.vpn.util.*;
 import java.io.*;
 
 import java.lang.Process;
+
+
+import androidx.core.content.ContextCompat;
 import com.slipkprojects.ultrasshservice.util.StreamGobbler;
 import com.slipkprojects.ultrasshservice.logger.SkStatus;
 
@@ -17,6 +21,7 @@ public class Tun2Socks extends Thread implements StreamGobbler.OnLineListener {
 
     private static final String TAG = Tun2Socks.class.getSimpleName();
     private static final String TUN2SOCKS_BIN = "libtun2socks.so";
+
 
 	private OnTun2SocksListener mListener;
 	public interface OnTun2SocksListener {

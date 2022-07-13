@@ -9,9 +9,9 @@ import android.os.Environment;
 import android.content.Intent;
 import android.os.Handler;
 import android.app.PendingIntent;
-import android.support.v4.app.NotificationCompat;
-import android.support.v4.content.ContextCompat;
-import android.support.v4.app.NotificationManagerCompat;
+import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
+import androidx.core.content.ContextCompat;
 import com.slipkprojects.ultrasshservice.util.FileUtils;
 
 /**
@@ -20,9 +20,9 @@ import com.slipkprojects.ultrasshservice.util.FileUtils;
 */
 public class TopExceptionHandler implements Thread.UncaughtExceptionHandler {
 	private static final String FILE_ERROR = "stack.trace";
-	
+
 	private static TopExceptionHandler mExceptionHandler;
-	
+
     private Thread.UncaughtExceptionHandler defaultUEH;
     private Context mContext;
 	private File mFileTemp;

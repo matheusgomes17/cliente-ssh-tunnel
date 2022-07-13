@@ -7,11 +7,11 @@ import android.content.Context;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.content.DialogInterface;
-import com.sshpluspro.vpn.R;
+import androidx.fragment.app.DialogFragment;
+import com.csv.vpn.R;
 import android.widget.Toast;
-import android.support.v4.app.DialogFragment;
 import android.content.Intent;
-import android.support.v4.content.LocalBroadcastManager;
+import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 
 import com.csv.vpn.SocksHttpApp;
 import com.slipkprojects.ultrasshservice.logger.SkStatus;

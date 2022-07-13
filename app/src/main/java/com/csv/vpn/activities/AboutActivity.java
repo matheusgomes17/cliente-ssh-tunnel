@@ -1,15 +1,16 @@
 package com.csv.vpn.activities;
 
-import android.support.v7.app.AppCompatActivity;
+
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
-import com.sshpluspro.vpn.R;
+import androidx.appcompat.widget.Toolbar;
+import androidx.appcompat.app.AppCompatActivity;
+import com.csv.vpn.R;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.widget.TextView;
 import com.csv.vpn.util.Utils;
 import android.text.Html;
-import android.support.v7.app.AlertDialog;
+import androidx.appcompat.app.AlertDialog;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
@@ -18,12 +19,12 @@ import com.slipkprojects.ultrasshservice.tunnel.TunnelUtils;
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.csv.vpn.SocksHttpApp;
-import com.sshpluspro.vpn.BuildConfig;
+import com.csv.vpn.BuildConfig;
 
 public class AboutActivity extends BaseActivity
 {
 	private AdView adsBannerView;
-	
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
 	{

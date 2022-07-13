@@ -1,7 +1,8 @@
 package com.csv.vpn.adapter;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,9 +10,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import java.io.File;
 import java.util.List;
-import com.hone.black.bravo.R;
+import com.csv.vpn.R;
 import android.widget.LinearLayout;
-import android.support.v7.app.AlertDialog;
+import androidx.appcompat.app.AlertDialog;
 import android.content.DialogInterface;
 
 public class ManagerFilesAdapter
@@ -98,8 +99,7 @@ public class ManagerFilesAdapter
 	}
 
 	@Override
-	public void onBindViewHolder(final ManagerFilesAdapter.ItemHolder item,
-			final int position) {
+	public void onBindViewHolder(final ManagerFilesAdapter.ItemHolder item, @SuppressLint("RecyclerView") final int position) {
 		ManagerItem manager = items.get(position);
 		String dirName = manager.getDirName();
 		item.tvItemName.setText(dirName);

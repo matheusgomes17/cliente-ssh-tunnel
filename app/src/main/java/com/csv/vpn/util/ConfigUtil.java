@@ -88,7 +88,8 @@ public class ConfigUtil {
                 return new JSONObject(json);
             } else {
                 InputStream inputStream = context.getAssets().open("config/config.json");
-                String json = AESCrypt.decrypt(m, readStream(inputStream));
+                //String json = AESCrypt.decrypt(m, readStream(inputStream));
+                String json = readStream(inputStream);
                 return new JSONObject(json);
             }
         } catch (Exception e) {
@@ -98,6 +99,7 @@ public class ConfigUtil {
     }
   //Codifique sua senha no App encryptor password ##################
 	public static final String m = new String(new byte[]{111,83,118,83,72,38,80,42,76,111,98,107,});
+    //public static final String m = "andresaya";
     //###########################################################
 
     private String readStream(InputStream in)

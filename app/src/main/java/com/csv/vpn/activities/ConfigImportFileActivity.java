@@ -6,21 +6,24 @@ import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.View;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import com.sshpluspro.vpn.R;
-import android.support.v7.widget.Toolbar;
+
+
+
+import com.csv.vpn.R;
+import androidx.appcompat.widget.Toolbar;
 import android.widget.Toast;
 import android.util.Log;
-import android.support.v4.content.LocalBroadcastManager;
+import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 import android.net.Uri;
 import java.io.FileNotFoundException;
 import java.io.InputStream;
@@ -33,22 +36,22 @@ import com.slipkprojects.ultrasshservice.util.FileUtils;
 import com.csv.vpn.SocksHttpMainActivity;
 import com.slipkprojects.ultrasshservice.config.ConfigParser;
 import java.io.FileInputStream;
-import android.support.v7.app.AlertDialog;
+import androidx.appcompat.app.AlertDialog;
 import java.text.DateFormat;
 import com.csv.vpn.LauncherActivity;
 import com.csv.vpn.preference.SettingsSSHPreference;
 import com.slipkprojects.ultrasshservice.config.Settings;
 import java.util.Map;
-import android.support.v4.util.ArrayMap;
+import androidx.collection.ArrayMap;
 
 public class ConfigImportFileActivity extends BaseActivity implements ManagerFilesAdapter.OnItemClickListener {
 	private static final String TAG = ConfigImportFileActivity.class.getSimpleName();
-	
+
 	private static final String RESTORE_CURRENT_PATH = "restoreCurrentPath";
 	private static final String HOME_PATH = Environment.getExternalStorageDirectory().toString();
 	private static final int PERMISSION_REQUEST_CODE = 1;
 	private static final String BACK_DIR = "../";
-	
+
 	private RecyclerView rvManagerList;
 	private ManagerFilesAdapter adapter;
 	

@@ -6,7 +6,7 @@ import com.google.android.gms.ads.InterstitialAd;
 import com.google.android.gms.ads.AdListener;
 import android.os.SystemClock;
 import android.util.Log;
-import com.hone.black.bravo.BuildConfig;
+import com.csv.vpn.BuildConfig;
 import com.google.android.gms.ads.AdRequest;
 import android.content.Context;
 import android.widget.Toast;

@@ -1,10 +1,10 @@
 package com.csv.vpn.activities;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 import com.csv.vpn.preference.SettingsPreference;
 import com.slipkprojects.ultrasshservice.config.Settings;
-import android.support.v7.app.AppCompatDelegate;
 import android.content.Context;
 import com.csv.vpn.preference.LocaleHelper;
 import android.content.pm.ActivityInfo;
@@ -17,7 +17,7 @@ import static android.content.pm.PackageManager.GET_META_DATA;
 public abstract class BaseActivity extends AppCompatActivity
 {
 	public static int mTheme = 0;
-    
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
 	{

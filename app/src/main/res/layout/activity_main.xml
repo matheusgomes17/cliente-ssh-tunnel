@@ -100,26 +100,26 @@
 				</LinearLayout>
 
 				<Spinner
-					style="@style/SpinnerTheme"
-					android:layout_width="fill_parent"
-					android:popupBackground="@drawable/bg"
-					android:background="@drawable/bg1"
-					android:layout_height="45.0dip"
-					android:textColor="#fffcfcfc"
-					android:spinnerMode="dropdown"
-					android:prompt="@string/category_prompt"
-					android:id="@+id/serverSpinner"/>
+						style="@style/SpinnerTheme"
+						android:layout_width="fill_parent"
+						android:popupBackground="@drawable/bg"
+						android:background="@drawable/bg1"
+						android:layout_height="45.0dip"
+						android:textColor="#fffcfcfc"
+						android:spinnerMode="dropdown"
+						android:prompt="@string/category_prompt"
+						android:id="@+id/serverSpinner" />
 
 				<Spinner
-					android:visibility="gone"
-					android:layout_marginTop="5dp"
-					android:layout_marginLeft="5dp"
-					android:layout_marginRight="5dp"
-					android:textColor="#fffcfcfc"
-					android:layout_width="match_parent"
-					android:layout_height="wrap_content"
-					android:prompt="@string/category_prompt"
-					android:id="@+id/proxyxx"/>
+						android:visibility="gone"
+						android:layout_marginTop="5dp"
+						android:layout_marginLeft="5dp"
+						android:layout_marginRight="5dp"
+						android:textColor="#fffcfcfc"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:prompt="@string/category_prompt"
+						android:id="@+id/proxyxx" tools:ignore="DuplicateIds"/>
 
 				<LinearLayout
 					android:layout_gravity="right"
@@ -176,28 +176,28 @@
 						android:layout_marginBottom="5dp">
 
 						<RelativeLayout
-							android:layout_width="match_parent"
-							android:layout_height="45dp"
-							android:background="@drawable/h_spin_shp1"
-							android:id="@+id/h_u_l"
-							android:layout_margin="5dp">
+								android:layout_width="match_parent"
+								android:layout_height="45dp"
+								android:background="@drawable/h_spin_shp1"
+								android:id="@+id/h_u_l2"
+								android:layout_margin="5dp" tools:ignore="DuplicateIds">
 
-							<android.support.design.widget.TextInputEditText
-								android:id="@+id/activity_mainInputPasswordUserEdit"
-								android:background="@null"
-								android:layout_width="fill_parent"
-								android:layout_height="match_parent"
-								android:hint="Usuario"
-								android:imeOptions="actionUnspecified|normal"
-								android:nextFocusDown="@+id/HarliePasss"
-								android:singleLine="true"
-								android:inputType="text"
-								android:textSize="14sp"
-								android:layout_centerInParent="true"
-								android:layout_alignParentRight="true"
-								android:layout_marginLeft="40dp"
-								android:textColorHint="#000000"
-								android:paddingLeft="5dp"/>
+							<com.google.android.material.textfield.TextInputEditText
+									android:id="@+id/activity_mainInputPasswordUserEdit"
+									android:background="@null"
+									android:layout_width="fill_parent"
+									android:layout_height="match_parent"
+									android:hint="Usuario"
+									android:imeOptions="actionUnspecified|normal"
+									android:nextFocusDown="@+id/HarliePasss"
+									android:singleLine="true"
+									android:inputType="text"
+									android:textSize="14sp"
+									android:layout_alignParentRight="true"
+									android:layout_marginLeft="40dp"
+									android:textColorHint="#000000"
+									android:paddingLeft="5dp" tools:ignore="DuplicateIds"
+									android:layout_centerInParent="true"/>
 
 							<ImageView
 								android:tint="@color/h_c"
@@ -233,12 +233,12 @@
 							android:layout_width="match_parent"
 							android:layout_height="45dp"
 							android:background="@drawable/h_spin_shp1"
-							android:id="@+id/fragment_userpassTextInputLayout"
+							android:id="@+id/fragment_userpassTextInputLayout2"
 							android:gravity="center"
 							android:layout_margin="5dp"
 							android:layout_marginTop="5dp">
 
-							<android.support.design.widget.TextInputEditText
+							<com.google.android.material.textfield.TextInputEditText
 								android:id="@+id/activity_mainInputPasswordPassEdit"
 								android:background="@null"
 								android:layout_width="match_parent"
@@ -263,7 +263,6 @@
 							<ImageButton
 								android:padding="10dp"
 								android:background="@android:color/transparent"
-								android:layout_alignEnd="@id/activity_mainInputPasswordPassEdit"
 								android:id="@+id/show_password"
 								android:src="@drawable/ic_visibility_black_24dp"
 								android:layout_width="wrap_content"
@@ -332,9 +331,11 @@
 				</LinearLayout>
 
 				<include
-					android:spinnerMode="dropdown"
-					layout="@layout/barrastatus"
-					android:layout_marginTop="60dp"/>
+						android:spinnerMode="dropdown"
+						layout="@layout/barrastatus"
+						android:layout_marginTop="60dp"
+						android:layout_height="2dp"
+						android:layout_width="2dp"/>
 
 				<RelativeLayout
 					android:layout_width="match_parent"
@@ -410,9 +411,9 @@
 					</LinearLayout>
 
 					<include
-						android:spinnerMode="dropdown"
-						android:layout_marginEnd="50dp"
-						layout="@layout/buttoniniciar"/>
+							android:spinnerMode="dropdown"
+							android:layout_marginEnd="50dp"
+							layout="@layout/buttoniniciar" android:layout_height="2dp" android:layout_width="2dp"/>
 
 				</RelativeLayout>
 
@@ -421,8 +422,9 @@
 		</LinearLayout>
 
 		<LinearLayout
-			android:layout_width="match_parent"
-			android:layout_height="match_parent">
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="horizontal">
 
 			<RelativeLayout
 				android:layout_width="match_parent"
@@ -478,59 +480,19 @@
 					android:id="@+id/h_u_l"
 					android:layout_margin="5dp">
 
-					<android.support.design.widget.TextInputEditText
-						android:id="@+id/activity_mainInputPasswordUserEdit"
-						android:background="@null"
-						android:layout_width="fill_parent"
-						android:layout_height="match_parent"
-						android:hint="Usuario"
-						android:imeOptions="actionUnspecified|normal"
-						android:nextFocusDown="@+id/HarliePasss"
-						android:singleLine="true"
-						android:inputType="text"
-						android:textSize="14sp"
-						android:layout_centerInParent="true"
-						android:layout_alignParentRight="true"
-						android:layout_marginLeft="40dp"
-						android:textColorHint="#000000"
-						android:paddingLeft="5dp"/>
+
 
 				</RelativeLayout>
 
 				<RelativeLayout
-					android:layout_width="match_parent"
-					android:layout_height="45dp"
-					android:background="@drawable/h_spin_shp1"
-					android:id="@+id/fragment_userpassTextInputLayout"
-					android:gravity="center"
-					android:layout_margin="5dp"
-					android:layout_marginTop="5dp">
-
-					<android.support.design.widget.TextInputEditText
-						android:id="@+id/activity_mainInputPasswordPassEdit"
-						android:background="@null"
 						android:layout_width="match_parent"
-						android:layout_height="match_parent"
-						android:hint="Senha"
-						android:singleLine="true"
-						android:textSize="14sp"
-						android:inputType="textPassword"
-						android:layout_centerInParent="true"
-						android:layout_alignParentLeft="true"
-						android:layout_marginLeft="40dp"
-						android:textColorHint="#000000"
-						android:paddingLeft="5dp"/>
+						android:layout_height="426dp"
+						android:background="@drawable/h_spin_shp1"
+						android:id="@+id/fragment_userpassTextInputLayout"
+						android:gravity="center"
+						android:layout_margin="5dp"
+						android:layout_marginTop="5dp">
 
-					<ImageButton
-						android:padding="10dp"
-						android:background="@android:color/transparent"
-						android:layout_alignEnd="@id/activity_mainInputPasswordPassEdit"
-						android:id="@+id/show_password"
-						android:src="@drawable/ic_visibility_black_24dp"
-						android:layout_width="wrap_content"
-						android:layout_height="match_parent"
-						android:hint="@string/show_password"
-						android:layout_gravity="right"/>
 
 				</RelativeLayout>
 
@@ -542,7 +504,7 @@
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
 					android:prompt="@string/category_prompt"
-					android:id="@+id/serverSpinner"/>
+					android:id="@+id/serverSpinner1"/>
 
 				<Spinner
 					android:visibility="gone"
@@ -552,18 +514,18 @@
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
 					android:prompt="@string/category_prompt"
-					android:id="@+id/proxyxx"/>
+					android:id="@+id/proxyxx2"/>
 
 			</LinearLayout>
 
 			<Spinner
-				style="@style/SpinnerTheme"
-				android:layout_marginLeft="5dp"
-				android:layout_marginRight="5dp"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:prompt="@string/category_prompt"
-				android:id="@+id/payloadSpinner"/>
+					style="@style/SpinnerTheme"
+					android:layout_marginLeft="5dp"
+					android:layout_marginRight="5dp"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:prompt="@string/category_prompt"
+					android:id="@+id/payloadSpinner" tools:ignore="DuplicateIds"/>
 
 		</LinearLayout>
 
@@ -571,7 +533,7 @@
 			android:id="@+id/activity_starterButtonMain"
 			android:layout_width="match_parent"
 			android:layout_height="36dp"
-			android:layout_marginTop="6dp"
+			android:layout_marginTop="-50dp"
 			android:layout_marginBottom="6dp"
 			android:layout_marginLeft="10dp"
 			android:layout_marginRight="10dp"
@@ -589,12 +551,12 @@
 			android:layout_marginTop="3dp"
 			android:padding="10dp">
 
-			<android.support.design.widget.TextInputLayout
+			<com.google.android.material.textfield.TextInputLayout
 				android:visibility="gone"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content">
 
-				<android.support.design.widget.TextInputEditText
+				<com.google.android.material.textfield.TextInputEditText
 					android:id="@+id/activity_mainInputPayloadEditText"
 					android:inputType="textMultiLine|textLongMessage"
 					android:layout_width="fill_parent"
@@ -604,7 +566,7 @@
 					android:textColor="@color/colorText"
 					android:hint="@string/payload"/>
 
-			</android.support.design.widget.TextInputLayout>
+			</com.google.android.material.textfield.TextInputLayout>
 
 		</LinearLayout>
 
@@ -635,28 +597,27 @@
 				android:breakStrategy="balanced"
 				android:gravity="center">
 
-				<android.support.v7.widget.AppCompatRadioButton
+				<androidx.appcompat.widget.AppCompatRadioButton
 					android:id="@+id/activity_mainSSHDirectRadioButton"
 					android:layout_height="wrap_content"
 					android:layout_width="wrap_content"
 					android:hint="SSH DIRECT"
 					android:padding="5dp"/>
 
-				<android.support.v7.widget.AppCompatRadioButton
+				<androidx.appcompat.widget.AppCompatRadioButton
 					android:id="@+id/activity_mainSSHProxyRadioButton"
 					android:layout_height="wrap_content"
 					android:layout_width="wrap_content"
 					android:hint="SSH + PROXY"/>
 
-				<android.support.v7.widget.AppCompatRadioButton
+				<androidx.appcompat.widget.AppCompatRadioButton
 					android:id="@+id/activity_mainSSL"
 					android:layout_height="wrap_content"
 					android:layout_width="wrap_content"
 					android:hint="SSH + SSL"/>
-
 			</RadioGroup>
 
-			<android.support.v7.widget.SwitchCompat
+			<androidx.appcompat.widget.SwitchCompat
 				android:id="@+id/activity_mainCustomPayloadSwitch"
 				android:layout_height="wrap_content"
 				android:layout_width="wrap_content"
@@ -763,7 +724,7 @@
 
 		</LinearLayout>
 
+
 	</LinearLayout>
 
 </RelativeLayout>
-

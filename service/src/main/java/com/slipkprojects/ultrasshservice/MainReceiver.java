@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.BroadcastReceiver;
-import android.support.v4.content.LocalBroadcastManager;
+import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 import com.slipkprojects.ultrasshservice.SocksHttpService;
 import com.slipkprojects.ultrasshservice.tunnel.TunnelManagerHelper;
 
@@ -13,7 +13,7 @@ public class MainReceiver extends BroadcastReceiver
 {
 	public static final String ACTION_SERVICE_RESTART = "sshTunnelServiceRestsrt",
 		ACTION_SERVICE_STOP = "sshtunnelservicestop";
-		
+
 	@Override
 	public void onReceive(Context context, Intent intent)
 	{

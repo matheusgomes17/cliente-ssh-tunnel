@@ -1,7 +1,7 @@
 package com.csv.vpn;
 
 import android.app.Application;
-import android.support.v7.app.AppCompatDelegate;
+import androidx.appcompat.app.AppCompatDelegate;
 import com.csv.vpn.preference.SettingsPreference;
 import com.slipkprojects.ultrasshservice.util.SkProtect;
 import com.slipkprojects.ultrasshservice.logger.SkStatus;
@@ -55,7 +55,7 @@ public class SocksHttpApp extends Application
 		SkProtect.init(this);
 		
 		// Initialize the Mobile Ads SDK.
-        MobileAds.initialize(this);
+        //MobileAds.initialize(this);
 		
 		// modo noturno
 		setModoNoturno(this);

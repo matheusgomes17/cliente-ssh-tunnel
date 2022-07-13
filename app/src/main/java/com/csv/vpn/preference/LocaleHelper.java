@@ -9,7 +9,7 @@ import android.preference.PreferenceManager;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.util.Locale;
-import android.support.annotation.StringDef;
+import androidx.annotation.StringDef;
 import com.slipkprojects.ultrasshservice.config.Settings;
 
 

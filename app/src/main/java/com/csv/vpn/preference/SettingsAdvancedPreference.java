@@ -1,28 +1,24 @@
 package com.csv.vpn.preference;
 
-import android.support.v7.preference.PreferenceFragmentCompat;
+import androidx.preference.*;
 import android.os.Bundle;
 import android.view.View;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
-import android.support.v7.preference.Preference;
-import android.support.v4.app.DialogFragment;
-import android.support.v7.preference.EditTextPreference;
+import androidx.fragment.app.DialogFragment;
 import android.widget.Toast;
 import android.view.View.OnClickListener;
 import android.content.SharedPreferences;
-import android.support.v7.preference.PreferenceManager;
-import android.support.v7.preference.CheckBoxPreference;
 import android.content.Intent;
 import com.csv.vpn.SocksHttpApp;
-import com.sshpluspro.vpn.R;
+import com.csv.vpn.R;
 import com.slipkprojects.ultrasshservice.logger.SkStatus;
 import com.slipkprojects.ultrasshservice.config.SettingsConstants;
 import com.slipkprojects.ultrasshservice.config.Settings;
 import com.slipkprojects.ultrasshservice.logger.ConnectionStatus;
 import android.os.Handler;
-import android.support.v7.preference.ListPreference;
-import android.support.v7.app.AppCompatDelegate;
+import androidx.preference.CheckBoxPreference;
+import androidx.appcompat.app.AppCompatDelegate;
 import android.content.Context;
 import android.os.Build;
 
@@ -38,15 +34,15 @@ public class SettingsAdvancedPreference extends PreferenceFragmentCompat
         // Load the Preferences from the XML file
         setPreferencesFromResource(R.xml.advanced_settings_preference, s);
 
-		mPref = getPreferenceManager()
+		mPref = (SharedPreferences) getPreferenceManager()
 			.getDefaultSharedPreferences(getContext());
-			
+
 		Settings config = new Settings(getContext());
 
 		/*ListPreference numberMaxThreads = (ListPreference)
 			findPreference(MAXIMO_THREADS_KEY);
 		numberMaxThreads.setOnPreferenceChangeListener(this);*/
-		
+
 		CheckBoxPreference checkDebug = (CheckBoxPreference) findPreference(MODO_DEBUG_KEY);
 		checkDebug.setOnPreferenceChangeListener(this);
 		

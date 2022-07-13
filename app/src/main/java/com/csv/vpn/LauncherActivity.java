@@ -1,9 +1,9 @@
 package com.csv.vpn;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import com.sshpluspro.vpn.R;
+import com.csv.vpn.R;
 import com.csv.vpn.activities.BaseActivity;
 
 /**

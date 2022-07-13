@@ -1,12 +1,12 @@
 package com.csv.vpn.fragments;
 
-import android.support.v4.app.DialogFragment;
+import androidx.fragment.app.DialogFragment;
 import android.app.Dialog;
 import android.os.Bundle;
 import android.view.LayoutInflater;
-import com.sshpluspro.vpn.R;
+import com.csv.vpn.R;
 import android.view.View;
-import android.support.v7.app.AlertDialog;
+import androidx.appcompat.app.AlertDialog;
 import android.content.DialogInterface;
 import android.widget.EditText;
 import com.csv.vpn.SocksHttpMainActivity;
@@ -15,10 +15,10 @@ import android.widget.LinearLayout;
 import android.widget.Toast;
 import android.view.ViewGroup;
 import android.widget.Button;
+import com.google.android.material.textfield.TextInputEditText;
 import com.slipkprojects.ultrasshservice.config.Settings;
-import android.support.design.widget.TextInputEditText;
-import android.support.design.widget.TextInputLayout;
-import android.support.v7.widget.AppCompatCheckBox;
+import com.google.android.material.textfield.TextInputLayout;
+import androidx.appcompat.widget.AppCompatCheckBox;
 import android.content.SharedPreferences;
 
 public class ProxyRemoteDialogFragment extends DialogFragment
@@ -28,7 +28,7 @@ public class ProxyRemoteDialogFragment extends DialogFragment
 	
 	private boolean usarProxyAutenticacao;
 	private boolean usarPayloadPadrao;
-	
+
 	private TextInputEditText proxyRemotoIpEdit;
 	private TextInputEditText proxyRemotoPortaEdit;
 
@@ -138,6 +138,10 @@ public class ProxyRemoteDialogFragment extends DialogFragment
 				
 				if (proxy_porta == null || proxy_porta.isEmpty() || proxy_porta.equals("0") ||
 					proxy_ip == null || proxy_ip.isEmpty()) {
+					System.out.println("---------------------------");
+					System.out.println("proxy_porta");
+					System.out.println("---------------------------");
+					
 					Toast.makeText(getContext(), "Proxy inválido", Toast.LENGTH_SHORT)
 						.show();
 				}

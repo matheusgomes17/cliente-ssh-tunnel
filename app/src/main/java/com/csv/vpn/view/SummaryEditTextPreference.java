@@ -2,8 +2,9 @@ package com.csv.vpn.view;
 
 import android.content.Context;
 import android.util.AttributeSet;
-import android.support.v7.preference.EditTextPreference;
-import android.support.v7.preference.R;
+import androidx.preference.EditTextPreference;
+import com.csv.vpn.R;
+
 
 public class SummaryEditTextPreference extends EditTextPreference {
     private CharSequence mDefaultSummary = getSummary();
